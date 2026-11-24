@@ -1,0 +1,65 @@
+# Публікації. type: preprint | article | thesis | conference
+# Назви подано мовою оригіналу; для англомовної версії сайту можна додати переклад як {uk: ..., en: ...}.
+- type: preprint
+  year: 2026
+  authors: {uk: "Гаврилюк Ю. В. (наук. кер. Жердецька Л. В.)", en: "Havryliuk Y. (supervisor: Zherdetska L.)"}
+  title: {uk: "Ризики ESG у діяльності міжнародних банківських груп: досвід України", en: "ESG risks in the activities of international banking groups: evidence from Ukraine"}
+  venue: {uk: "Препринт; конкурсна робота, ОНЕУ; розширена версія статті 2025 р. Включає модель Орнштейна–Уленбека для депозитного портфеля та ESG-зважений стрес-тест", en: "Preprint; competition paper, ONEU; extended version of the 2025 article. Includes an Ornstein–Uhlenbeck model of the deposit portfolio and an ESG-weighted stress test"}
+  link: research/esg.html
+  file: esg/Havryliuk_ESG_risks_banking_groups_2026.pdf
+- type: preprint
+  year: 2026
+  authors: {uk: "Гаврилюк Ю.", en: "Havryliuk Y."}
+  title: "Financial Development, Currency Dollarisation, and Capital Accumulation in Wartime Ukraine: An OLG-Model Approach"
+  venue: {uk: "Форум молодих дослідників НБУ 2026, Methodological Excellence Award", en: "NBU Young Researchers Forum 2026, Methodological Excellence Award"}
+- type: preprint
+  year: 2025
+  authors: {uk: "Гаврилюк Ю., Цехоцький Л.", en: "Havryliuk Y., Tsekhotskyi L."}
+  title: "Assessing the Heterogeneous Effects of Climate Change on Economic and Financial Cycles in Ukraine"
+  venue: {uk: "Форум молодих дослідників НБУ 2025, Best Poster Award", en: "NBU Young Researchers Forum 2025, Best Poster Award"}
+- type: article
+  year: 2026
+  authors: {uk: "Жердецька Л. В., Гаврилюк Ю. В.", en: "Zherdetska L., Havryliuk Y."}
+  title: "Оцінка циклічності страхового ринку України: регресійний та VAR-аналіз"
+  venue: {uk: "Науковий вісник ОНЕУ, 5(342), 39–52", en: "Scientific Bulletin of ONEU, 5(342), 39–52"}
+  doi: 10.32680/2409-9260-2026-5-342-39-52
+- type: article
+  year: 2025
+  authors: {uk: "Havryliuk Y., Zherdetska L.", en: "Havryliuk Y., Zherdetska L."}
+  title: "ESG risks in the activities of international banking groups: evidence from Ukraine"
+  venue: "International Journal of Psychology and Strategic Communication, 3(1), 398–408"
+  doi: 10.61030/MHLU2636
+- type: article
+  year: 2024
+  authors: {uk: "Добриніна Л., Гаврилюк Ю.", en: "Dobrynina L., Havryliuk Y."}
+  title: "Особливості побудови оптимального мультиактивного інвестиційного портфеля в умовах невизначеності та ризику"
+  venue: {uk: "Ефективна економіка, (5)", en: "Efektyvna Ekonomika, (5)"}
+- type: article
+  year: 2024
+  authors: {uk: "Жердецька Л., Гаврилюк Ю.", en: "Zherdetska L., Havryliuk Y."}
+  title: {uk: "Визначення сутності цифрових валют та особливостей їх впливу на монетарну систему", en: "Assessment of the essence of digital currencies and features of their influence on the monetary system"}
+  venue: {uk: "Науковий вісник ОНЕУ, 1–2(314–315), 42–50", en: "Scientific Bulletin of ONEU, 1–2(314–315), 42–50"}
+  doi: 10.32680/2409-9260-2024-1-2-314-315-42-50
+- type: article
+  year: 2024
+  authors: {uk: "Гаврилюк Ю. В., Деркач Ю. Б.", en: "Havryliuk Y., Derkach Y."}
+  title: {uk: "Методи аналізу часових рядів в контексті прогнозування валютного курсу", en: "Methods of time-series analysis in the context of exchange-rate forecasting"}
+  venue: {uk: "Причорноморські економічні студії, (86), 126–132", en: "Black Sea Economic Studies, (86), 126–132"}
+  doi: 10.32782/bses.86-20
+- type: thesis
+  year: 2025
+  authors: {uk: "Гаврилюк Ю. В.", en: "Havryliuk Y."}
+  title: {uk: "Методичні підходи до вимірювання системного ризику банківського сектора економіки", en: "Methodological approaches to measuring systemic risk in the banking sector"}
+  venue: {uk: "Бакалаврська робота, Одеський національний економічний університет", en: "Bachelor's thesis, Odesa National Economic University"}
+  link: research/bachelor.html
+  file: bachelor/Havryliuk_bachelor_thesis_2025.pdf
+- type: conference
+  year: 2022
+  authors: {uk: "Добриніна Л., Гаврилюк Ю.", en: "Dobrynina L., Havryliuk Y."}
+  title: "Methodology for calculating the interest rate in the context of inflation targeting"
+  venue: "Trends in Management, Finance, and Business Technologies"
+- type: conference
+  year: 2022
+  authors: {uk: "Гаврилюк Ю.", en: "Havryliuk Y."}
+  title: "Stock market development in the context of a global economic recession"
+  venue: "Modern Tools for Managing Corporate Finance"

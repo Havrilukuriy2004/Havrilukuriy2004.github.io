@@ -1,0 +1,128 @@
+slug: master
+kicker: {uk: "Магістерська робота · ОНЕУ · 2026", en: "Master's thesis · ONEU · 2026"}
+title:
+  uk: "Вартість фондування, процентне переоцінювання та розподіл активів банків України"
+  en: "Funding Costs, Interest Rate Repricing and Asset Allocation of Ukrainian Banks"
+subtitle:
+  uk: "Funding Costs, Interest Rate Repricing and Asset Allocation of Ukrainian Banks"
+  en: "Вартість фондування, процентне переоцінювання та розподіл активів банків України"
+card:
+  uk: "Чому дешеві депозити не стають кредитами: економічна вартість ресурсу, виявлений розрив переоцінювання і капітальне обмеження кредитування. Дані НБУ 2018–2026, 85 банків."
+  en: "Why cheap deposits do not become loans: the economic cost of funding, the revealed repricing gap and the capital constraint on lending. NBU data 2018–2026, 85 banks."
+meta:
+  - k: {uk: "Автор", en: "Author"}
+    v: {uk: "Юрій Гаврилюк", en: "Yurii Havryliuk"}
+  - k: {uk: "Науковий керівник", en: "Supervisor"}
+    v: {uk: "д.е.н., проф. Лілія Жердецька", en: "Prof. Liliia Zherdetska, Dr. Sc. (Econ.)"}
+  - k: {uk: "Заклад", en: "Institution"}
+    v: {uk: "Одеський національний економічний університет, кафедра банківської справи; програма «Управління діяльністю банків на фінансовому ринку»", en: "Odesa National Economic University, Department of Banking; programme “Bank Management in Financial Markets”"}
+  - k: {uk: "Статус", en: "Status"}
+    v: {uk: "Завершено (2026); статті за результатами готуються до публікації", en: "Completed (2026); articles based on the results are being prepared for publication"}
+  - k: {uk: "Обсяг", en: "Scope"}
+    v: {uk: "411 с.; 97 таблиць, 89 рисунків, 163 джерела, 36 додатків", en: "411 pp.; 97 tables, 89 figures, 163 references, 36 appendices"}
+  - k: {uk: "Дані", en: "Data"}
+    v: {uk: "НБУ, січень 2018 – серпень 2026: 104 місяці; 7 206 банко-місяців, 85 банків; звітність підприємств 2021–2025", en: "NBU, January 2018 – August 2026: 104 months; 7,206 bank-months, 85 banks; firm financial statements 2021–2025"}
+  - k: {uk: "Методи", en: "Methods"}
+    v: {uk: "декомпозиція ціна/структура, тести Бая–Перрона, локальні проєкції, асиметричні ECM, марковські режими, подієвий аналіз, панелі «банк × КВЕД × місяць», Монте-Карло", en: "price/mix decomposition, Bai–Perron tests, local projections, asymmetric ECMs, Markov switching, event studies, bank × sector × month panels, Monte Carlo"}
+  - k: {uk: "JEL", en: "JEL"}
+    v: "E43, E52, G21, G28"
+abstract:
+  uk: |
+    Робота розглядає фондування, процентне переоцінювання і вибір активів як **єдину задачу управління банківським балансом**.
+    Розмежовано договірну, бухгалтерську, граничну, тіньову і трансфертну вартість ресурсу, формалізовано договірний і
+    *виявлений* розриви переоцінювання, чутливість чистого процентного доходу та економічної вартості капіталу, а також
+    граничну умову вибору між кредитами, ОВДП і депозитними сертифікатами НБУ.
+
+    Емпірична частина спирається на відкриті дані НБУ за січень 2018 – серпень 2026 р. Показано, що номінальна дешевизна
+    депозитів — наслідок переважання коштів на вимогу; що 12-місячна передача облікової ставки у вартість депозитів
+    неповна (близько 0,42); що виявлений розрив переоцінювання системи додатний (+15,4% активів проти −13,6% за договірним
+    підходом); що економічна вартість депозитів перевищує номінальну на 1,76 в. п. Еластичність структури активів за
+    відносною дохідністю мала, а кредитну експансію визначає **запас капіталу**, причому цей зв'язок відображає пропозицію
+    кредиту, а не попит на нього.
+  en: |
+    The thesis treats funding, interest rate repricing and asset choice as **a single bank balance sheet management problem**.
+    It distinguishes the contractual, book, marginal, shadow and transfer cost of funds; formalises the contractual and
+    *revealed* repricing gaps, the sensitivity of net interest income and of the economic value of equity; and derives the
+    marginal condition for choosing between loans, government bonds (OVDP) and NBU certificates of deposit.
+
+    The empirical part uses open NBU data for January 2018 – August 2026. The nominal cheapness of deposits results from
+    the dominance of demand deposits; 12-month pass-through of the policy rate to the cost of deposits is incomplete
+    (about 0.42); the revealed repricing gap of the system is positive (+15.4% of assets against −13.6% under the contractual
+    approach); and the economic cost of deposits exceeds the reported cost by 1.76 pp. The elasticity of the asset
+    structure with respect to relative returns is small, while credit expansion is driven by **capital headroom**, a link
+    that reflects credit supply rather than demand.
+figure:
+  file: master/figures/S3_F03_allocation.png
+  file_en: master/figures/en/S3_F03_allocation.png
+  caption:
+    uk: "Структура розподільного портфеля банків: кредити, ОВДП, сертифікати НБУ та інші ліквідні активи, 2019–2026. Джерело: розрахунки автора за даними НБУ."
+    en: "Bank allocation portfolio: loans, OVDP, NBU certificates of deposit and other liquid assets, 2019–2026. Source: author's calculations based on NBU data."
+findings:
+  uk:
+    - "**Дешевизна депозитів структурна, а не цінова.** Частка коштів на вимогу зросла з 50,3% до 73,6%, валютна частка депозитів знизилася з 45,4% до 29,4%. Структурні злами у 2020 р., 2022 р. та березні 2025 р. не дозволяють використовувати єдиний коефіцієнт передачі."
+    - "**Передача облікової ставки неповна й асиметрична.** Дохідність сертифікатів НБУ реагує майже повністю за місяць, вартість депозитів і дохідність активів — лише на близько 0,42 в. п. за 12 міс.; банки швидше знижують завищені ставки, ніж підвищують занижені (−0,162 проти −0,085). Запровадження тримісячних ДС підняло ставки строкових депозитів населення на 0,37–0,45 в. п."
+    - "**Договірний і виявлений розриви мають протилежні знаки:** −13,62% проти +15,40% активів у серпні 2026 р.; додатний виявлений розрив мають 97% банків. Головна загроза для маржі — швидке зниження ставок: 1-й процентиль зміни річного чистого процентного доходу системи становить −16,8%."
+    - "**Прихована вартість фондування:** за номінальної вартості депозитів 5,00% економічна становить 6,76%; надбавка 1,76 в. п. на 71% формується грошовим резервом на кореспондентському рахунку."
+    - "**Ціна не керує структурою активів.** +1 в. п. відносної дохідності кредитів збільшує їхню частку лише на 0,16 в. п.; запас капіталу, більший на 10 в. п., передує зростанню частки кредитів на 3,0 в. п. за рік. Із кожної додаткової гривні депозитів з березня 2022 р. банки спрямовували в кредити 5 коп., в ОВДП 12 коп., у сертифікати НБУ 50 коп."
+    - "**Ієрархія обмежень:** режимне (війна і монетарний режим) задає рівень кредитування, капітальне визначає, хто нарощує кредити, ціновий чинник діє третім. Із 16,6 в. п. падіння частки кредитів у 2022–2023 рр. відносна дохідність пояснює 0,8 в. п."
+  en:
+    - "**Deposit cheapness is structural, not a matter of price.** The share of demand deposits rose from 50.3% to 73.6% and the FX share of deposits fell from 45.4% to 29.4%. Structural breaks in 2020, 2022 and March 2025 rule out a single pass-through coefficient."
+    - "**Policy rate pass-through is incomplete and asymmetric.** NBU CD yields respond almost fully within a month; the cost of deposits and asset yields move by about 0.42 pp over 12 months. Banks cut rates that are too high faster than they raise rates that are too low (−0.162 vs −0.085). Three-month CDs raised household term deposit rates by 0.37–0.45 pp."
+    - "**The contractual and revealed gaps have opposite signs:** −13.62% vs +15.40% of assets in August 2026; 97% of banks have a positive revealed gap. The main risk to margins is rapid easing: the 1st percentile of the change in annual system NII is −16.8%."
+    - "**Hidden cost of funding:** with a reported deposit cost of 5.00%, the economic cost is 6.76%; 71% of the 1.76 pp wedge comes from cash reserves in correspondent accounts."
+    - "**Prices do not steer the asset mix.** +1 pp of relative loan return raises the loan share by only 0.16 pp; 10 pp more capital headroom precedes a 3.0 pp rise in the loan share within a year. Of every additional hryvnia of deposits since March 2022, banks put 5 kopiykas into loans, 12 into OVDP and 50 into NBU CDs."
+    - "**A hierarchy of constraints:** the regime constraint (war and monetary regime) sets the level of lending, capital determines which banks expand, and price comes third. Of the 16.6 pp fall in the loan share in 2022–2023, relative returns explain 0.8 pp."
+structure:
+  uk:
+    - "Розділ 1. Теоретико-методологічні засади: вартість фондування і процентне ціноутворення; процентне переоцінювання і чутливість балансу; відносна дохідність активів"
+    - "Розділ 2. Вартість фондування, процентне переоцінювання та процентна чутливість банків України (підрозділи 2.1–2.4)"
+    - "Розділ 3. Відносна дохідність активів та розподіл банківських ресурсів (підрозділи 3.1–3.3)"
+    - "Висновки; 14 додатків у друкованій частині, 22 електронні додатки"
+  en:
+    - "Chapter 1. Theory and methodology: cost of funds and interest rate pricing; repricing and balance sheet sensitivity; relative asset returns"
+    - "Chapter 2. Funding costs, repricing and interest rate sensitivity of Ukrainian banks (sections 2.1–2.4)"
+    - "Chapter 3. Relative asset returns and the allocation of bank resources (sections 3.1–3.3)"
+    - "Conclusions; 14 printed and 22 electronic appendices"
+note:
+  uk: "Код відтворює всі розрахунки з відкритих даних НБУ: запустіть `run_all_v6.R` (інструкція в `README.md` архіву). Код також доступний у репозиторії [github.com/Havrilukuriy2004/oneu-thesis](https://github.com/Havrilukuriy2004/oneu-thesis)."
+  en: "The code reproduces every calculation from open NBU data: run `run_all_v6.R` (see `README.md` in the archive). The code is also on GitHub: [github.com/Havrilukuriy2004/oneu-thesis](https://github.com/Havrilukuriy2004/oneu-thesis)."
+groups:
+  - title: {uk: "Аналітична записка за результатами", en: "Research note based on the results"}
+    items:
+      - {title: {uk: "Аналітична записка: «Дешеві депозити: прихована вартість і прихований хедж»", en: "Research note: “Cheap deposits: a hidden cost and a hidden hedge” (Ukrainian)"}, file: club/notes/FMC_Funding_Note_UA.pdf}
+      - {title: {uk: "Research note (англійською)", en: "Research note: “Cheap deposits: a hidden cost and a hidden hedge”"}, file: club/notes/FMC_Funding_Note_EN.pdf}
+  - title: {uk: "Excel-інструменти", en: "Excel tools"}
+    desc: {uk: "Робочі моделі за результатами роботи, з даними всіх банків на серпень 2026 р. Опис — на вкладці «Аналітика».", en: "Working models based on the thesis, with data for all banks as of August 2026. See the Analytics tab for a description."}
+    items:
+      - {title: {uk: "Інструмент 12: процентний ризик балансу та прихована вартість фондування", en: "Tool 12: balance sheet interest rate risk and hidden cost of funding (Ukrainian)"}, file: master/excel/Bank_Repricing_Funding_Tool_UA.xlsx}
+      - {title: {uk: "Інструмент 12 (англійська версія)", en: "Tool 12: balance sheet interest rate risk and hidden cost of funding"}, file: master/excel/Bank_Repricing_Funding_Tool_EN.xlsx}
+      - {title: {uk: "Інструмент 13: стрес-тестування IRRBB", en: "Tool 13: IRRBB stress test (Ukrainian)"}, file: master/excel/IRRBB_Stress_Test_UA.xlsx}
+      - {title: {uk: "Інструмент 13 (англійська версія)", en: "Tool 13: IRRBB stress test"}, file: master/excel/IRRBB_Stress_Test_EN.xlsx}
+      - {title: {uk: "Інструмент 18: аналіз активів банку і відносної дохідності", en: "Tool 18: bank assets and relative returns (Ukrainian)"}, file: master/excel/Bank_Assets_Tool_UA.xlsx}
+      - {title: {uk: "Інструмент 18 (англійська версія)", en: "Tool 18: bank assets and relative returns"}, file: master/excel/Bank_Assets_Tool_EN.xlsx}
+      - {title: {uk: "Інструмент 19: клас боржника за Положенням № 351 і кредитний ризик", en: "Tool 19: borrower class under Regulation No. 351 and credit risk (Ukrainian)"}, file: master/excel/Borrower_Class_Credit_Risk_Tool_UA.xlsx}
+      - {title: {uk: "Інструмент 19 (англійська версія)", en: "Tool 19: borrower class under Regulation No. 351 and credit risk"}, file: master/excel/Borrower_Class_Credit_Risk_Tool_EN.xlsx}
+  - title: {uk: "Дані", en: "Data"}
+    items:
+      - {title: {uk: "Місячні показники банківської системи, 2018–2026 (53 змінні)", en: "Monthly banking system indicators, 2018–2026 (53 variables)"}, file: master/data/system_monthly.csv}
+      - {title: {uk: "Панель банків: структура активів, дохідності, запас капіталу (6 297 банко-місяців)", en: "Bank panel: asset structure, yields, capital headroom (6,297 bank-months)"}, file: master/data/banks_panel.csv}
+      - {title: {uk: "Словник змінних", en: "Data dictionary (Ukrainian)"}, file: master/data/data_dictionary_uk.csv}
+      - {title: {uk: "Пакет для gretl: дані, скрипти, результати і графіки", en: "gretl package: data, scripts, outputs and charts"}, file: master/data/gretl_package.zip}
+  - title: {uk: "База даних", en: "Database"}
+    items:
+      - {title: {uk: "Вітрини даних НБУ (Parquet): банк × місяць, активи, пруденційні нормативи, ставки, макро", en: "NBU data marts (Parquet): bank × month, assets, prudential ratios, rates, macro"}, file: master/database/nbu_thesis_marts_v6_parquet.zip, note: {uk: "mart_bank_month_v6, mart_bank_assets_v6, mart_bank_prudential_v7, mart_fm_rates_long_v6, mart_system_*, macro_monthly_v6, stg_osb_v6", en: "mart_bank_month_v6, mart_bank_assets_v6, mart_bank_prudential_v7, mart_fm_rates_long_v6, mart_system_*, macro_monthly_v6, stg_osb_v6"}}
+  - title: {uk: "Код", en: "Code"}
+    items:
+      - {title: {uk: "Повний код дослідження (R і Python): завантаження даних НБУ, вітрини, моделі, таблиці, Excel-інструменти", en: "Full research code (R and Python): NBU data download, marts, models, tables, Excel tools"}, file: master/code/oneu-thesis_code.zip}
+  - title: {uk: "Результати", en: "Results"}
+    items:
+      - {title: {uk: "Усі таблиці й рисунки (українською): розділи 2.1–2.4, 3, OU-динаміка, очікування", en: "All tables and figures (Ukrainian labels): sections 2.1–2.4, 3, OU dynamics, expectations"}, file: master/results/Results_UA.zip}
+      - {title: {uk: "Усі таблиці й рисунки (англійською)", en: "All tables and figures (English labels)"}, file: master/results/Results_EN.zip}
+citation: |
+  @mastersthesis{havryliuk2026funding,
+    author = {Havryliuk, Yurii},
+    title  = {Funding Costs, Interest Rate Repricing and Asset Allocation of Ukrainian Banks},
+    school = {Odesa National Economic University},
+    year   = {2026},
+    type   = {Master's thesis}
+  }

@@ -1,0 +1,89 @@
+﻿Набір даних;Змінна;Опис
+system_monthly.gdt;month;Місяць (дата першого дня)
+system_monthly.gdt;policy;Облікова ставка НБУ, середня за місяць, %
+system_monthly.gdt;cd_rate;Ставка овернайт депозитних сертифікатів НБУ, %
+system_monthly.gdt;uonia;UONIA, середня за місяць, %
+system_monthly.gdt;cpi;Інфляція (ІСЦ), % р/р
+system_monthly.gdt;infl_exp;Інфляційні очікування, середнє за групами, %
+system_monthly.gdt;infl_exp_hh;Інфляційні очікування населення, %
+system_monthly.gdt;infl_exp_an;Інфляційні очікування фінансових аналітиків, %
+system_monthly.gdt;usd;Офіційний курс UAH/USD, середній за місяць
+system_monthly.gdt;ovdp_1y;Дохідність ОВДП 1 рік (безкупонна крива НБУ), %
+system_monthly.gdt;uird_3m;Індекс UIRD 3 міс., гривня, %
+system_monthly.gdt;bls_demand;Попит на кредити бізнесу (опитування банків), баланс відповідей
+system_monthly.gdt;bls_standards;Стандарти кредитування бізнесу (опитування банків), баланс відповідей
+system_monthly.gdt;m1_bn;Грошовий агрегат М1, млрд грн
+system_monthly.gdt;cod;Вартість депозитів (4 продукти), %
+system_monthly.gdt;cod_uah;Вартість гривневих депозитів, %
+system_monthly.gdt;cod_fx;Вартість валютних депозитів, %
+system_monthly.gdt;demand_share;Частка коштів на вимогу в коштах клієнтів, %
+system_monthly.gdt;fx_share;Валютна частка коштів клієнтів, %
+system_monthly.gdt;hh_share;Частка коштів населення, %
+system_monthly.gdt;deposits_bn;Кошти клієнтів (4 продукти), млрд грн
+system_monthly.gdt;nim;Чиста процентна маржа, %
+system_monthly.gdt;y_iea;Дохідність процентних активів, %
+system_monthly.gdt;c_ibl;Вартість процентних зобов'язань, %
+system_monthly.gdt;loans_bn;Чисті кредити бізнесу і населенню, млрд грн
+system_monthly.gdt;cd_bn;Депозитні сертифікати НБУ, млрд грн
+system_monthly.gdt;ovdp_bn;ОВДП у портфелях банків, млрд грн
+system_monthly.gdt;r_corp_demand;Ставка за коштами бізнесу на вимогу (гривня), %
+system_monthly.gdt;r_corp_term;Ставка за строковими депозитами бізнесу (гривня), %
+system_monthly.gdt;r_hh_demand;Ставка за коштами населення на вимогу (гривня), %
+system_monthly.gdt;r_hh_term;Ставка за строковими депозитами населення (гривня), %
+system_monthly.gdt;y_loans;Дохідність кредитів (12 міс.), %
+system_monthly.gdt;cost_risk;Вартість кредитного ризику (12 міс.), %
+system_monthly.gdt;y_cds;Дохідність сертифікатів НБУ, %
+system_monthly.gdt;y_ovdp;Дохідність ОВДП у портфелях банків, %
+system_monthly.gdt;rr_ls;Відносна дохідність кредитів до ДС після ризику і капіталу, в. п.
+system_monthly.gdt;rr_bs;Відносна дохідність ОВДП до ДС, в. п.
+system_monthly.gdt;m_cds;Маржа ДС над вартістю депозитів, в. п.
+system_monthly.gdt;s_loans;Частка кредитів у розподільному портфелі, %
+system_monthly.gdt;s_ovdp;Частка ОВДП у розподільному портфелі, %
+system_monthly.gdt;s_cds;Частка сертифікатів НБУ в розподільному портфелі, %
+system_monthly.gdt;s_other;Частка інших ліквідних активів, %
+system_monthly.gdt;portfolio_bn;Розподільний портфель, млрд грн
+system_monthly.gdt;phase;Фаза монетарного циклу (1 жорстка 2018-19 ... 6 посилення 2025-26)
+system_monthly.gdt;gap_revealed;Виявлений 12-міс. розрив переоцінювання, % активів
+system_monthly.gdt;gap_contract;Договірний 12-міс. розрив переоцінювання, % активів
+system_monthly.gdt;cost_econ;Економічна вартість депозитів (з резервами і ФГВФО), %
+system_monthly.gdt;wedge;Прихована вартість фондування (клин), в. п.
+system_monthly.gdt;sfc;Порогова дохідність вільних коштів (SFC), %
+system_monthly.gdt;real_policy;Реальна облікова ставка ex ante, %
+system_monthly.gdt;spread_cd_cod;Ставка ДС мінус вартість депозитів, в. п.
+system_monthly.gdt;war;Воєнний стан (1 з березня 2022 р.)
+system_monthly.gdt;cd3m;Тримісячні ДС (1 з квітня 2023 р.)
+banks_panel.gdt;nkb;Код банку НБУ
+banks_panel.gdt;own_state;Державний банк (1/0)
+banks_panel.gdt;own_foreign;Банк з іноземним капіталом (1/0)
+banks_panel.gdt;own_private;Приватний банк (1/0)
+banks_panel.gdt;s_loans;Частка кредитів у портфелі, %
+banks_panel.gdt;s_ovdp;Частка ОВДП у портфелі, %
+banks_panel.gdt;s_cds;Частка сертифікатів НБУ у портфелі, %
+banks_panel.gdt;s_other;Частка інших ліквідних активів, %
+banks_panel.gdt;portfolio_bn;Розподільний портфель, млрд грн
+banks_panel.gdt;y_loans;Дохідність кредитів (12 міс.), %
+banks_panel.gdt;y_ovdp;Дохідність ОВДП (12 міс.), %
+banks_panel.gdt;y_cds;Дохідність ДС, %
+banks_panel.gdt;cost_risk;Вартість кредитного ризику (12 міс.), %
+banks_panel.gdt;cod;Вартість депозитів банку (12 міс.), %
+banks_panel.gdt;rr_ls;Відносна дохідність кредитів до ДС, в. п.
+banks_panel.gdt;rr_bs;Відносна дохідність ОВДП до ДС, в. п.
+banks_panel.gdt;m_cds;Маржа ДС над вартістю депозитів, в. п.
+banks_panel.gdt;headroom;Запас капіталу до мінімуму, в. п.
+banks_panel.gdt;ln_assets;Логарифм активів
+banks_panel.gdt;demand_share;Частка коштів на вимогу, %
+banks_panel.gdt;fx_share;Валютна частка депозитів, %
+banks_panel.gdt;policy;Облікова ставка, %
+banks_panel.gdt;cd_rate;Ставка овернайт ДС, %
+banks_panel.gdt;war;Воєнний стан (1/0)
+banks_panel.gdt;phase;Фаза монетарного циклу (1-6)
+banks_panel.gdt;headroom_w;"Запас капіталу, обмежений [-5; 50] в. п."
+banks_panel.gdt;ln_lcr;Логарифм LCR (обмежений 50-2000%)
+banks_panel.gdt;rr_ls_w;Відносна дохідність кредитів до ДС, вінзоризована 1-99%
+banks_panel.gdt;rr_bs_w;Відносна дохідність ОВДП до ДС, вінзоризована 1-99%
+banks_panel.gdt;cost_risk_w;Вартість ризику, вінзоризована 1-99%
+banks_panel.gdt;bank_name;Назва банку
+banks_panel.gdt;bank;Порядковий номер банку (1–79)
+banks_panel.gdt;time;Номер місяця (1 = грудень 2018)
+banks_panel.gdt;year;Рік
+banks_panel.gdt;mon;Місяць року (1–12)

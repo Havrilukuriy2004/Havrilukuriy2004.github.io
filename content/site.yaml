@@ -1,0 +1,107 @@
+# Профіль і головна сторінка. Кожне текстове поле має дві мови: uk і en.
+name: {uk: "Юрій Гаврилюк", en: "Yurii Havryliuk"}
+tagline:
+  uk: "Економіст. Банківська справа, процентний ризик, фінансова стабільність, аналіз підприємств та інвестиційних проєктів"
+  en: "Economist. Banking, interest rate risk, financial stability, company and investment project analysis"
+city: {uk: "Одеса, Україна", en: "Odesa, Ukraine"}
+email: ugavriluk90@gmail.com
+links:
+  - {label: "LinkedIn", url: "https://www.linkedin.com/in/yurii-havrylyuk"}
+  - {label: "ORCID", url: "https://orcid.org/0009-0004-6112-0118"}
+  - {label: "GitHub", url: "https://github.com/Havrilukuriy2004"}
+cv_file: cv/Havryliuk_CV_en.pdf
+
+about:
+  uk: |
+    Магістрант Київської школи економіки (Economic Analysis) та Одеського національного економічного університету
+    (Banking Management in Financial Markets). Провідний аналітик кредитних ризиків АТ «ВСТ БАНК», асистент-дослідник KSE,
+    голова Макроекономічного та фінансового клубу ОНЕУ.
+
+    Досліджую, як працює банківське посередництво в умовах війни: скільки насправді коштує банкам ресурс, як швидко
+    переоцінюються їхні баланси після змін облікової ставки і чому дешеві депозити не перетворюються на кредити.
+    Окремі напрями досліджень охоплюють системний ризик, міжбанківські мережі та ESG-ризики банківських груп.
+
+    У практичній роботі займаюся фінансовим аналізом підприємств і оцінкою інвестиційних проєктів: аналізую
+    фінансову звітність і боргову місткість позичальників, будую моделі грошових потоків, розраховую NPV, IRR і
+    строк окупності, оцінюю бізнес і чутливість проєктів до ставок, курсу та цін. Дані, код, Excel-інструменти й
+    результати досліджень відкрито викладені на цьому сайті.
+  en: |
+    MA student at the Kyiv School of Economics (Economic Analysis) and Odesa National Economic University (Banking
+    Management in Financial Markets). Lead credit risk analyst at VST BANK, research assistant at KSE and head of the
+    ONEU Macroeconomics and Finance Club.
+
+    I study how banking intermediation works in wartime: what funding really costs banks, how fast their balance sheets
+    reprice after policy rate changes, and why cheap deposits do not turn into loans. Other strands of my work cover
+    systemic risk, interbank networks and ESG risks of banking groups.
+
+    In practice I analyse companies and investment projects: financial statements and debt capacity of borrowers,
+    cash flow models, NPV, IRR and payback, business valuation and the sensitivity of projects to interest rates,
+    the exchange rate and prices. The data, code, Excel tools and results of my research are published openly on
+    this site.
+
+interests:
+  uk: ["Банківське посередництво", "Процентний ризик банківської книги", "Трансмісія монетарної політики", "Фінансова стабільність і системний ризик", "Мережеві моделі", "Макрофінансове моделювання", "Аналіз підприємств та інвестиційних проєктів"]
+  en: ["Banking intermediation", "Interest rate risk in the banking book", "Monetary policy transmission", "Financial stability and systemic risk", "Network models", "Macro-financial modelling", "Company and investment project analysis"]
+
+education:
+  - org: {uk: "Київська школа економіки", en: "Kyiv School of Economics"}
+    place: {uk: "Київ", en: "Kyiv"}
+    degree: {uk: "Магістр економіки, Economic Analysis", en: "MA in Economics, Economic Analysis"}
+    dates: "2025–2027"
+  - org: {uk: "Одеський національний економічний університет", en: "Odesa National Economic University"}
+    place: {uk: "Одеса", en: "Odesa"}
+    degree: {uk: "Магістр, Banking Management in Financial Markets", en: "MSc, Banking Management in Financial Markets"}
+    dates: "2025–2026"
+  - org: {uk: "Zagreb School of Economics and Management", en: "Zagreb School of Economics and Management"}
+    place: {uk: "Загреб, Хорватія", en: "Zagreb, Croatia"}
+    degree: {uk: "Бакалаврат з економіки, програма обміну", en: "BSc in Economics, exchange programme"}
+    dates: "2023–2024"
+  - org: {uk: "Одеський національний економічний університет", en: "Odesa National Economic University"}
+    place: {uk: "Одеса", en: "Odesa"}
+    degree: {uk: "Бакалавр, міжнародна банківська справа", en: "BSc, International Banking"}
+    dates: "2021–2025"
+  - org: {uk: "Київський національний університет імені Тараса Шевченка", en: "Taras Shevchenko National University of Kyiv"}
+    place: {uk: "Київ", en: "Kyiv"}
+    degree: {uk: "Бакалаврат з математики", en: "BSc in Mathematics"}
+    dates: "2022–2026"
+
+experience:
+  - org: {uk: "АТ «ВСТ БАНК»", en: "VST BANK"}
+    place: {uk: "Одеса", en: "Odesa"}
+    role: {uk: "Провідний аналітик кредитних ризиків", en: "Lead credit risk analyst"}
+    dates: {uk: "2021 – дотепер", en: "2021 – present"}
+    note:
+      uk: "Аналіз корпоративних позичальників та інвестиційних проєктів, структурування кредитних операцій, очікувані кредитні збитки за МСФЗ 9 і Положенням НБУ № 351, скорингова методологія для МСБ."
+      en: "Analysis of corporate borrowers and investment projects, credit structuring, expected credit losses under IFRS 9 and NBU Regulation No. 351, SME scoring methodology."
+  - org: {uk: "Київська школа економіки", en: "Kyiv School of Economics"}
+    place: {uk: "Київ", en: "Kyiv"}
+    role: {uk: "Асистент-дослідник", en: "Research assistant"}
+    dates: {uk: "2026 – дотепер", en: "2026 – present"}
+    note: {uk: "Дані, емпіричний аналіз, навчальні та дослідницькі матеріали (R, Python).", en: "Data, empirical analysis, teaching and research materials (R, Python)."}
+  - org: {uk: "Національний банк України", en: "National Bank of Ukraine"}
+    place: {uk: "Київ", en: "Kyiv"}
+    role: {uk: "Стажер, Департамент фінансової стабільності; Департамент стратегії та розвитку", en: "Intern, Financial Stability Department; Strategy and Development Department"}
+    dates: "2023–2025"
+    note: {uk: "Моделювання мережі міжбанківських експозицій і сценаріїв фінансового зараження.", en: "Modelling the interbank exposure network and contagion scenarios."}
+  - org: {uk: "EY; PwC", en: "EY; PwC"}
+    place: {uk: "Київ; Львів", en: "Kyiv; Lviv"}
+    role: {uk: "Трансфертне ціноутворення; аудит", en: "Transfer pricing; audit"}
+    dates: "2022–2023"
+
+awards:
+  - title: {uk: "Methodological Excellence Award, Форум молодих дослідників НБУ 2026", en: "Methodological Excellence Award, NBU Young Researchers Forum 2026"}
+    dates: {uk: "червень 2026", en: "June 2026"}
+    note: {uk: "Financial Development, Currency Dollarisation, and Capital Accumulation in Wartime Ukraine: An OLG-Model Approach.", en: "Financial Development, Currency Dollarisation, and Capital Accumulation in Wartime Ukraine: An OLG-Model Approach."}
+  - title: {uk: "Best Poster Award, Форум молодих дослідників НБУ 2025 (з Левом Цехоцьким)", en: "Best Poster Award, NBU Young Researchers Forum 2025 (with Lev Tsekhotskyi)"}
+    dates: {uk: "травень 2025", en: "May 2025"}
+    note: {uk: "Assessing the Heterogeneous Effects of Climate Change on Economic and Financial Cycles in Ukraine.", en: "Assessing the Heterogeneous Effects of Climate Change on Economic and Financial Cycles in Ukraine."}
+
+skills:
+  - label: {uk: "Програмування", en: "Programming"}
+    value: {uk: "Python, R, MATLAB, LaTeX, SQL, Excel/VBA", en: "Python, R, MATLAB, LaTeX, SQL, Excel/VBA"}
+  - label: {uk: "Економетрика", en: "Econometrics"}
+    value: {uk: "часові ряди, панельні дані, локальні проєкції, VAR, ECM, марковські режими, квантильні моделі, мережеві моделі", en: "time series, panel data, local projections, VAR, ECM, Markov switching, quantile models, network models"}
+  - label: {uk: "Банківська справа", en: "Banking"}
+    value: {uk: "IRRBB, ALM, кредитний ризик (МСФЗ 9, Положення № 351), стрес-тестування, трансфертне ціноутворення", en: "IRRBB, ALM, credit risk (IFRS 9, Regulation No. 351), stress testing, funds transfer pricing"}
+  - label: {uk: "Мови", en: "Languages"}
+    value: {uk: "українська (рідна), англійська (advanced)", en: "Ukrainian (native), English (advanced)"}

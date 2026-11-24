@@ -1,0 +1,51 @@
+slug: esg
+kicker: {uk: "Препринт · конкурсна робота · 2026", en: "Preprint · competition paper · 2026"}
+title:
+  uk: "Ризики ESG у діяльності міжнародних банківських груп: досвід України"
+  en: "ESG Risks in the Activities of International Banking Groups: Evidence from Ukraine"
+subtitle:
+  uk: "ESG Risks in the Activities of International Banking Groups: Evidence from Ukraine"
+  en: "Ризики ESG у діяльності міжнародних банківських груп: досвід України"
+card:
+  uk: "Соціальні й управлінські ризики на прикладі Raiffeisen: ARMA–GARCH, CoVaR і SRISK; процес Орнштейна–Уленбека для депозитного портфеля і ESG-зважений стрес-тест методом Монте-Карло."
+  en: "Social and governance risks in the Raiffeisen case: ARMA–GARCH, CoVaR and SRISK; an Ornstein–Uhlenbeck model of the deposit portfolio and an ESG-weighted Monte Carlo stress test."
+meta:
+  - k: {uk: "Автори", en: "Authors"}
+    v: {uk: "Юрій Гаврилюк; науковий керівник — д.е.н., проф. Лілія Жердецька", en: "Yurii Havryliuk; supervisor Prof. Liliia Zherdetska"}
+  - k: {uk: "Статус", en: "Status"}
+    v: {uk: "Препринт; конкурсна робота, рекомендована кафедрою банківської справи ОНЕУ (протокол № 11 від 16.03.2026)", en: "Preprint; competition paper recommended by the ONEU Department of Banking (minutes No. 11, 16 March 2026)"}
+  - k: {uk: "Методи", en: "Methods"}
+    v: {uk: "ARMA(2,1), GARCH(1,1), MS-GARCH, CoVaR (квантильна регресія), SRISK, процес Орнштейна–Уленбека, ANOVA, Монте-Карло", en: "ARMA(2,1), GARCH(1,1), MS-GARCH, CoVaR (quantile regression), SRISK, Ornstein–Uhlenbeck process, ANOVA, Monte Carlo"}
+abstract:
+  uk: |
+    Робота ідентифікує, як реалізуються **соціальні та управлінські** складові ESG-ризиків у міжнародних банківських
+    групах і як вони впливають на фінансову стійкість та ринкові індикатори. На прикладі Raiffeisen Bank International,
+    яка продовжила діяльність у Росії, оцінено вплив ESG-подій на дохідність і волатильність акцій та внесок
+    Raiffeisen Bank Aval у системний ризик (CoVaR, SRISK). Для депозитного портфеля застосовано процес
+    Орнштейна–Уленбека: параметри повернення до рівноваги і волатильності порівняно для банків, що залишилися на
+    ринку РФ, та решти системи. На цій основі побудовано ESG-зважений стрес-тест депозитної бази з Монте-Карло
+    симуляцією і ESG-стрес-індекс для раннього попередження.
+  en: |
+    The paper identifies how the **social and governance** components of ESG risk materialise in international banking
+    groups and how they affect financial resilience and market indicators. Using Raiffeisen Bank International, which
+    continued to operate in Russia, it estimates the effect of ESG events on share returns and volatility and the
+    contribution of Raiffeisen Bank Aval to systemic risk (CoVaR, SRISK). The deposit portfolio is modelled as an
+    Ornstein–Uhlenbeck process, comparing mean reversion and volatility for banks that stayed in Russia and the rest of
+    the system. This leads to an ESG-weighted Monte Carlo stress test of the deposit base and an ESG stress index for
+    early warning.
+findings:
+  uk:
+    - "**Ринкова реакція:** ARMA(2,1) і GARCH(1,1) для акцій RBI показують значущий вплив минулих шоків на поточну волатильність (α = 0,094, p = 0,026) і сильну ненормальність розподілу дохідностей."
+    - "**Системний ризик:** у періоди загострення санкційних і регуляторних ризиків ΔCoVaR Raiffeisen Bank Aval щодо WIG Ukraine суттєво зростає; динаміка SRISK узгоджується з цим."
+    - "**Депозити (OU-модель):** після лютого 2022 р. швидкість повернення до рівноваги κ зросла на 41,5% у банків, що не вийшли з РФ, і на 59,8% у решти (різниця значуща, p = 0,050); волатильність σ у першій групі впала на 64,7%, а в інших банках зросла на 16,1% (p = 0,048)."
+    - "**Стрес-тест:** в екстремальному ESG-сценарії VaR-99 зростає в 2,24 раза, ES-99 — у 2,15 раза, а ймовірність скорочення депозитної бази більш ніж на 10% — з 6,4% до 34,1%."
+  en:
+    - "**Market response:** ARMA(2,1) and GARCH(1,1) models for RBI shares show a significant effect of past shocks on current volatility (α = 0.094, p = 0.026) and strongly non-normal returns."
+    - "**Systemic risk:** when sanction and regulatory risks escalate, the ΔCoVaR of Raiffeisen Bank Aval relative to WIG Ukraine rises markedly, in line with SRISK."
+    - "**Deposits (OU model):** after February 2022, mean reversion κ rose by 41.5% at banks that stayed in Russia and by 59.8% at other banks (difference significant, p = 0.050); volatility σ fell by 64.7% in the first group and rose by 16.1% elsewhere (p = 0.048)."
+    - "**Stress test:** in the extreme ESG scenario, VaR-99 rises 2.24-fold, ES-99 2.15-fold, and the probability of a deposit base decline of more than 10% from 6.4% to 34.1%."
+groups:
+  - title: {uk: "Текст і презентація", en: "Paper and slides"}
+    items:
+      - {title: {uk: "Повний текст роботи (препринт)", en: "Full paper, preprint (Ukrainian)"}, file: esg/Havryliuk_ESG_risks_banking_groups_2026.pdf}
+      - {title: {uk: "Презентація", en: "Presentation"}, file: esg/Havryliuk_ESG_presentation_2026.pdf}

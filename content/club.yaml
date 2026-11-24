@@ -1,0 +1,58 @@
+# Фінансовий та макроекономічний клуб ОНЕУ.
+# Записи клубу в блозі: content/posts/<назва>/uk.md та en.md з полем  section: club
+name: {uk: "Макроекономічний та фінансовий клуб ОНЕУ", en: "ONEU Macroeconomics and Finance Club"}
+name_alt: {uk: "ONEU Macroeconomics and Finance Club", en: "Макроекономічний та фінансовий клуб ОНЕУ"}
+role: {uk: "Голова клубу Юрій Гаврилюк", en: "Head of the club Yurii Havryliuk"}
+telegram: https://t.me/macrofinoneu
+logo: club_logo.png
+contacts:
+  uk: ["Макроекономічний та фінансовий клуб ОНЕУ", "Кафедра банківської справи ОНЕУ", "Одеський національний економічний університет", "вул. Італійська, 26, Одеса, Україна"]
+  en: ["ONEU Macroeconomics and Finance Club", "ONEU Department of Banking", "Odesa National Economic University", "26 Italiiska Street, Odesa, Ukraine"]
+email: rned.fbd@gmail.com
+phone: "+380 68 500 86 96"
+contact: ugavriluk90@gmail.com
+about:
+  uk: |
+    Студентський клуб Одеського національного економічного університету при кафедрі банківської справи. Ми вивчаємо
+    корпоративні фінанси, банківську справу, макроекономіку та фінансове моделювання на реальних даних і пишемо
+    аналітичні записки у форматі research notes центральних банків.
+  en: |
+    A student club at Odesa National Economic University, hosted by the Department of Banking. We study corporate
+    finance, banking, macroeconomics and financial modelling on real data, and write research notes in the format used
+    by central banks.
+activities:
+  uk: ["Курси клубу: вступ до економіки, корпоративні фінанси з модулем банківського стажування, монетарна політика", "Відкриті лекції та обговорення наукових робіт", "Аналітичні записки та ONEU Monthly Economic Outlook", "Воркшопи з Excel, Python і R"]
+  en: ["Club courses: introduction to economics, corporate finance with a banking internship module, monetary policy", "Open lectures and paper discussions", "Research notes and the ONEU Monthly Economic Outlook", "Excel, Python and R workshops"]
+categories:
+  - tag: {uk: "Курс", en: "Course"}
+    title: {uk: "Вступ до економіки", en: "Introduction to Economics"}
+    desc: {uk: "Усі лекції, Problem Sets і групові кейси курсу.", en: "All lectures, problem sets and group cases."}
+    page: club/intro-economics.html
+  - tag: {uk: "Курс", en: "Course"}
+    title: {uk: "Корпоративні фінанси та оцінка бізнесу", en: "Corporate Finance and Business Valuation"}
+    desc: {uk: "Мінікурс на даних українських компаній. Заняття, Excel-моделі, кейси і модуль банківського стажування про структуру капіталу.", en: "A mini-course on Ukrainian company data. Classes, Excel models, cases and a banking internship module on capital structure."}
+    page: club/corporate-finance.html
+  - tag: {uk: "Курс", en: "Course"}
+    title: {uk: "Новокейнсіанська модель монетарної політики", en: "New Keynesian Monetary Policy"}
+    desc: {uk: "Повний курс лекцій від кривої Філліпса до QPM і монетарної політики України.", en: "A full lecture course from the Phillips curve to QPM and Ukraine."}
+    page: club/monetary-policy.html
+  - tag: {uk: "Лекції", en: "Lectures"}
+    title: {uk: "Відкриті лекції та обговорення", en: "Open lectures and discussions"}
+    desc: {uk: "Інфляція у світі та в Україні, обговорення робіт, методика ONEU Outlook.", en: "Inflation in the world and Ukraine, paper discussions, ONEU Outlook methodology."}
+    page: club/lectures.html
+notes:
+  - date: {uk: "листопад 2026", en: "November 2026"}
+    title: {uk: "Коли дорожча енергія гальмує зростання", en: "When higher energy prices slow growth"}
+    desc: {uk: "Енергетичні шоки в країнах, що розвиваються, і розвинених економіках: панель 34 країн, LP-IV, історичні епізоди.", en: "Energy shocks in emerging and developed economies: a 34-country panel, LP-IV and historical episodes."}
+    post: energy-prices-em-dm
+    files:
+      - {label: {uk: "Записка (UA)", en: "Note (UA)"}, file: club/notes/FMC_Energy_Note_UA.pdf}
+      - {label: {uk: "Note (EN)", en: "Note (EN)"}, file: club/notes/FMC_Energy_Note_EN.pdf}
+      - {label: {uk: "Повний звіт (EN)", en: "Full report"}, file: club/notes/Energy_Prices_EM_DM_Full_Report.pdf}
+  - date: {uk: "листопад 2026", en: "November 2026"}
+    title: {uk: "Дешеві депозити: прихована вартість і прихований хедж", en: "Cheap deposits: a hidden cost and a hidden hedge"}
+    desc: {uk: "Економічна вартість депозитів, виявлений розрив переоцінювання і ризик для маржі банків від зниження ставок.", en: "The economic cost of deposits, the revealed repricing gap and the risk to bank margins from rate cuts."}
+    post: master-hidden-cost
+    files:
+      - {label: {uk: "Записка (UA)", en: "Note (UA)"}, file: club/notes/FMC_Funding_Note_UA.pdf}
+      - {label: {uk: "Note (EN)", en: "Note (EN)"}, file: club/notes/FMC_Funding_Note_EN.pdf}

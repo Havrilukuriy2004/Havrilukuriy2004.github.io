@@ -1,0 +1,76 @@
+slug: bachelor
+kicker: {uk: "Бакалаврська робота · ОНЕУ · 2025", en: "Bachelor's thesis · ONEU · 2025"}
+title:
+  uk: "Методичні підходи до вимірювання системного ризику банківського сектора економіки"
+  en: "Methodological Approaches to Measuring Systemic Risk in the Banking Sector"
+subtitle:
+  uk: "Methodological Approaches to Measuring Systemic Risk in the Banking Sector"
+  en: "Методичні підходи до вимірювання системного ризику банківського сектора економіки"
+card:
+  uk: "Структурний і циклічний системний ризик в Україні: концентрація і крихкість, індикатор фінансового циклу, квантильні локальні проєкції, теорія ігор регуляторів і «парадокс диверсифікації»."
+  en: "Structural and cyclical systemic risk in Ukraine: concentration and fragility, a financial cycle indicator, quantile local projections, a game between regulators and the “diversification paradox”."
+meta:
+  - k: {uk: "Автор", en: "Author"}
+    v: {uk: "Юрій Гаврилюк", en: "Yurii Havryliuk"}
+  - k: {uk: "Науковий керівник", en: "Supervisor"}
+    v: {uk: "д.е.н., проф. Лілія Жердецька", en: "Prof. Liliia Zherdetska, Dr. Sc. (Econ.)"}
+  - k: {uk: "Заклад", en: "Institution"}
+    v: {uk: "Одеський національний економічний університет, програма «Міжнародний банківський бізнес»", en: "Odesa National Economic University, programme “International Banking Business”"}
+  - k: {uk: "Обсяг", en: "Scope"}
+    v: {uk: "237 с.; 19 таблиць, 38 рисунків, 180 джерел, 10 додатків", en: "237 pp.; 19 tables, 38 figures, 180 references, 10 appendices"}
+  - k: {uk: "Методи", en: "Methods"}
+    v: {uk: "тести Грейнджера, VAR, квантильна регресія, LP і квантильні LP, кластеризація, OU-NIG моделі депозитів, теорія ігор, модель середнього поля", en: "Granger tests, VAR, quantile regression, LP and quantile LP, clustering, OU-NIG deposit models, game theory, a mean-field model"}
+abstract:
+  uk: |
+    Робота розглядає системний ризик як поєднання **структурної** складової (концентрація, взаємозв'язки, системно
+    важливі банки) і **циклічної** (проциклічна поведінка, накопичення вразливостей у фазі підйому). На даних НБУ
+    перевірено гіпотези «концентрація–крихкість» і «конкуренція–стабільність», побудовано індикатор фінансового циклу
+    (FCI), адаптований до України, і оцінено його асиметричний вплив на прибутковість банків квантильними локальними
+    проєкціями. Третій розділ досліджує конфлікт монетарної та макропруденційної політик засобами теорії ігор і
+    обґрунтовує «парадокс диверсифікації» в моделі середнього поля; на цій основі запропоновано підхід до калібрування
+    контрциклічного буфера капіталу.
+  en: |
+    The thesis treats systemic risk as a combination of a **structural** component (concentration, interconnectedness,
+    systemically important banks) and a **cyclical** one (procyclical behaviour, vulnerabilities built up in booms).
+    Using NBU data it tests the concentration–fragility and competition–stability hypotheses, builds a financial cycle
+    indicator (FCI) adapted to Ukraine and estimates its asymmetric effect on bank profitability with quantile local
+    projections. The third chapter studies the conflict between monetary and macroprudential policy with game theory
+    and derives a “diversification paradox” in a mean-field model, leading to an approach for calibrating the
+    countercyclical capital buffer.
+figure:
+  file: bachelor/figures/mean_field_baseline.png
+  caption:
+    uk: "Індекси ризику в моделі середнього поля, базовий сценарій. Джерело: розрахунки автора."
+    en: "Risk indices in the mean-field model, baseline scenario (Ukrainian labels). Source: author's calculations."
+findings:
+  uk:
+    - "**Концентрація–крихкість:** вища концентрація (HHI, CR3) за Грейнджером передує зростанню частки NPL і резервів під кредитні збитки з лагом 6–12 місяців."
+    - "**Конкуренція–стабільність:** посилення конкуренції (ентропія Шеннона, H-статистика) знижує кредитний ризик; водночас вища капіталізація системи веде до її деконцентрації, а періоди нестабільності пригнічують конкуренцію."
+    - "**Український FCI** з коефіцієнтом обслуговування боргу, опитуваннями банків і ринком нерухомості краще прогнозує фази накопичення ризику, ніж стандартні аналоги на кшталт d-SRI."
+    - "**Асиметрія наслідків:** найменш прибуткові банки (5-й і 10-й квантилі) втрачають у 7–8 разів більше рентабельності, ніж медіанний банк, що свідчить про моральний ризик і ризик-шифтинг."
+    - "**Координація політик:** у грі монетарного і макропруденційного регуляторів рівновага Неша показує, що жорстка монетарна політика має поєднуватися з відповідними пруденційними заходами."
+    - "**Парадокс диверсифікації:** за високої зовнішньої невизначеності посилення взаємозв'язків між банками без зміцнення їхніх капітальних буферів збільшує, а не зменшує системний ризик."
+  en:
+    - "**Concentration–fragility:** higher concentration (HHI, CR3) Granger-causes higher NPL shares and loan loss reserves with a 6–12 month lag."
+    - "**Competition–stability:** more competition (Shannon entropy, H-statistic) lowers credit risk; at the same time, higher system capitalisation leads to deconcentration and instability suppresses competition."
+    - "**A Ukrainian FCI** with the debt service ratio, bank lending surveys and the property market predicts risk build-up phases better than standard indicators such as the d-SRI."
+    - "**Asymmetric losses:** the least profitable banks (5th and 10th quantiles) lose 7–8 times more profitability than the median bank, consistent with moral hazard and risk shifting."
+    - "**Policy coordination:** in a game between monetary and macroprudential authorities, the Nash equilibrium shows that tight monetary policy must be matched by tight prudential measures."
+    - "**Diversification paradox:** under high external uncertainty, more interconnectedness without stronger capital buffers raises rather than lowers systemic risk."
+groups:
+  - title: {uk: "Текст і презентація", en: "Text and slides"}
+    items:
+      - {title: {uk: "Повний текст бакалаврської роботи", en: "Full thesis text (Ukrainian)"}, file: bachelor/Havryliuk_bachelor_thesis_2025.pdf}
+      - {title: {uk: "Реферат роботи", en: "Thesis summary (Ukrainian)"}, file: bachelor/Havryliuk_bachelor_summary_2025.pdf}
+      - {title: {uk: "Презентація до захисту", en: "Defence slides"}, file: bachelor/Havryliuk_bachelor_defence_slides.pdf}
+  - title: {uk: "Код, дані та результати", en: "Code, data and results"}
+    items:
+      - {title: {uk: "Код: концентрація (R), кластеризація (MATLAB), фінансовий цикл, OU-NIG модель депозитів, VaR/CoVaR (Python)", en: "Code: concentration (R), clustering (MATLAB), financial cycle, OU-NIG deposit model, VaR/CoVaR (Python)"}, file: bachelor/bachelor_code.zip}
+      - {title: {uk: "Дані та результати: HHI, кластери банків, FCI, імпульсні відгуки, симуляції", en: "Data and results: HHI, bank clusters, FCI, impulse responses, simulations"}, file: bachelor/bachelor_data_results.zip}
+citation: |
+  @bachelorsthesis{havryliuk2025systemic,
+    author = {Havryliuk, Yurii},
+    title  = {Methodological Approaches to Measuring Systemic Risk in the Banking Sector},
+    school = {Odesa National Economic University},
+    year   = {2025}
+  }

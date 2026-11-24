@@ -1,0 +1,71 @@
+slug: interbank
+kicker: {uk: "Дослідницький проєкт · 2024–2026", en: "Research project · 2024–2026"}
+title:
+  uk: "Моделювання мережі міжбанківських зв'язків і системний ризик"
+  en: "Modelling the Interbank Network and Systemic Risk"
+subtitle:
+  uk: "Modelling the Interbank Network and Systemic Risk in Ukraine"
+  en: "Моделювання мережі міжбанківських зв'язків і системний ризик в Україні"
+card:
+  uk: "Реконструкція неспостережуваної мережі міжбанківських експозицій, моделі її еволюції (TERGM, SIENA) і каскадні дефолти за Furfine та Eisenberg–Noe: криза 2014 р. проти 2025 р.; модель раннього попередження PD."
+  en: "Reconstructing the unobserved network of interbank exposures, models of its evolution (TERGM, SIENA) and default cascades à la Furfine and Eisenberg–Noe: the 2014 crisis vs 2025; an early-warning PD model."
+meta:
+  - k: {uk: "Автор", en: "Author"}
+    v: {uk: "Юрій Гаврилюк", en: "Yurii Havryliuk"}
+  - k: {uk: "Контекст", en: "Context"}
+    v: {uk: "Розпочато під час стажування в Департаменті фінансової стабільності НБУ", en: "Started during an internship at the NBU Financial Stability Department"}
+  - k: {uk: "Методи", en: "Methods"}
+    v: {uk: "гравітаційна модель, IPF з поведінковими сценаріями, TERGM, DSBM, SAOM/SIENA, Furfine, Eisenberg–Noe; Random Forest, XGBoost", en: "gravity model, IPF with behavioural scenarios, TERGM, DSBM, SAOM/SIENA, Furfine, Eisenberg–Noe; Random Forest, XGBoost"}
+abstract:
+  uk: |
+    Двосторонні міжбанківські експозиції є «чорною скринькою»: точні дані існують, але закриті банківською таємницею.
+    Проєкт відтворює латентну топологію міжбанківських зобов'язань України лише з агрегованих балансових даних,
+    перевіряє, які мережеві й поведінкові чинники керують її еволюцією, і порівнює стійкість системи до каскадних
+    дефолтів у кризу «банкопаду» 2014 р. та в сучасних умовах. Окремий блок — система раннього попередження, що
+    прогнозує ймовірність дефолту банку на річному горизонті й задає стартові умови для стрес-сценаріїв.
+  en: |
+    Bilateral interbank exposures are a “black box”: the exact data exist but are protected by banking secrecy. The
+    project reconstructs the latent topology of Ukrainian interbank liabilities from aggregate balance sheet data,
+    tests which network and behavioural factors drive its evolution, and compares the system's resilience to default
+    cascades during the 2014 banking crisis and today. A separate module is an early-warning system that predicts a
+    bank's one-year probability of default and sets the starting conditions for the stress scenarios.
+figure:
+  file: interbank/animations/web/anim_Crisis_Gravity_Furfine.gif
+  caption:
+    uk: "Каскад Furfine на мережі, реконструйованій гравітаційною моделлю, січень 2014 р. Джерело: розрахунки автора за даними НБУ."
+    en: "Furfine cascade on the network reconstructed with the gravity model, January 2014 (labels in Ukrainian). Source: author's calculations based on NBU data."
+findings:
+  uk:
+    - "**Архітектура мережі визначає ризик.** Мережі, реконструйовані за різними поведінковими гіпотезами (базова диверсифікація, перевага надійним, капіталізованим або подібним партнерам), суттєво відрізняються за вразливістю."
+    - "**Еволюція мережі:** TERGM статистично підтверджує значущість транзитивності, взаємності й рівня капіталу, що валідує поведінкові сценарії реконструкції."
+    - "**2014 р.:** у базовому сценарії модель клірингу Eisenberg–Noe дає потенційні втрати капіталу близько 1,5 млрд грн; пруденційні сценарії значно стійкіші."
+    - "**2025 р.:** вища капіталізація робить систему стійкішою до прямого каскадного зараження, але абсолютний масштаб потенційних втрат від шоку ліквідності зріс до близько 62 млрд грн у базовому сценарії; за зв'язків із висококапіталізованими партнерами система стійка."
+    - "**Модель PD:** Random Forest виявляє 27 із 30 дефолтів тестової вибірки (recall 90%, precision 6%) — фільтр першого рівня; найсильніші провісники — волатильність ліквідності й прибутковості, а агрегований PD за Грейнджером випереджає індекс фінансового стресу до 8 кварталів."
+  en:
+    - "**Network architecture determines risk.** Networks reconstructed under different behavioural hypotheses (baseline diversification, preference for safe, well-capitalised or similar partners) differ sharply in vulnerability."
+    - "**Network evolution:** TERGM confirms the significance of transitivity, reciprocity and capital, validating the behavioural reconstruction scenarios."
+    - "**2014:** in the baseline scenario the Eisenberg–Noe clearing model gives potential capital losses of about UAH 1.5 bn; prudential scenarios are much more resilient."
+    - "**2025:** higher capitalisation makes the system more resilient to direct default cascades, but the absolute scale of potential losses from a liquidity shock has grown to about UAH 62 bn in the baseline; with links to well-capitalised partners the system is resilient."
+    - "**PD model:** Random Forest flags 27 of 30 defaults in the test sample (90% recall, 6% precision), a first-level filter; the strongest predictors are the volatility of liquidity and profitability, and aggregate PD Granger-causes the financial stress index up to 8 quarters ahead."
+groups:
+  - title: {uk: "Фінальна презентація і звіти", en: "Final presentation and reports"}
+    items:
+      - {title: {uk: "Моделювання мережі міжбанківських зв'язків: фінальна презентація", en: "Modelling the interbank network: final presentation (Ukrainian)"}, file: interbank/interbank_network_modelling_slides_uk.pdf}
+      - {title: {uk: "Звіт за моделлю мережі", en: "Network model report"}, file: interbank/interbank_model_report.pdf}
+      - {title: {uk: "Звіт: система раннього попередження PD", en: "Report: PD early-warning system"}, file: interbank/pd_early_warning_report.pdf}
+  - title: {uk: "Анімації каскадів зараження", en: "Contagion cascade animations"}
+    desc: {uk: "Раунди каскаду Furfine на реконструйованих мережах (GIF, 2400×2400). Вузли позначено кодами банків НБУ.", en: "Rounds of the Furfine cascade on reconstructed networks (GIF, 2400×2400). Nodes are labelled with NBU bank codes."}
+    items:
+      - {title: {uk: "Каскад Furfine, 2014, сценарій Gravity", en: "Furfine cascade, 2014, Gravity scenario"}, file: interbank/animations/anim_Crisis_Gravity_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2014, сценарій Low PD", en: "Furfine cascade, 2014, Low PD scenario"}, file: interbank/animations/anim_Crisis_Low_PD_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2014, сценарій High Capital", en: "Furfine cascade, 2014, High Capital scenario"}, file: interbank/animations/anim_Crisis_High_Capital_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2014, сценарій Homophily", en: "Furfine cascade, 2014, Homophily scenario"}, file: interbank/animations/anim_Crisis_Homophily_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2025, сценарій Gravity", en: "Furfine cascade, 2025, Gravity scenario"}, file: interbank/animations/anim_Current_Gravity_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2025, сценарій Low PD", en: "Furfine cascade, 2025, Low PD scenario"}, file: interbank/animations/anim_Current_Low_PD_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2025, сценарій High Capital", en: "Furfine cascade, 2025, High Capital scenario"}, file: interbank/animations/anim_Current_High_Capital_Furfine.gif}
+      - {title: {uk: "Каскад Furfine, 2025, сценарій Homophily", en: "Furfine cascade, 2025, Homophily scenario"}, file: interbank/animations/anim_Current_Homophily_Furfine.gif}
+  - title: {uk: "Код і дані", en: "Code and data"}
+    items:
+      - {title: {uk: "Код (Python): реконструкція мережі, контагія, моделі PD", en: "Code (Python): network reconstruction, contagion, PD models"}, file: interbank/interbank_code.zip}
+      - {title: {uk: "Індекс фінансового стресу (Excel)", en: "Financial stress index (Excel)"}, file: interbank/financial_stress_index.xlsx}
+      - {title: {uk: "Балансові дані банків для реконструкції мережі (Excel)", en: "Bank balance sheet data for network reconstruction (Excel)"}, file: interbank/banks_data_FULL.xlsx, note: {uk: "Дослідницькі дані. Модельні PD отримано в навчальному дослідженні на відкритих даних НБУ, вони не є кредитним рейтингом, оцінкою фінансового стану банків чи прогнозом їхнього дефолту.", en: "Research data. Model PDs come from an academic study on open NBU data and are not a credit rating, an assessment of banks' financial condition or a forecast of their default."}}

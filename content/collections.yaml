@@ -1,0 +1,176 @@
+# Сторінки курсів і категорій клубу. Кожна сторінка: опис, (необов'язково) програма за темами, групи матеріалів.
+# Щоб додати файл: покладіть його у files/... і допишіть рядок у потрібну групу.
+
+- path: teaching/banking.html
+  active: teaching.html
+  parent: teaching.html
+  parent_label: {uk: "Викладання", en: "Teaching"}
+  title: {uk: "Банківська справа", en: "Banking"}
+  subtitle: {uk: "Banking · ОНЕУ, весна 2026", en: "Банківська справа · ONEU, spring 2026"}
+  description:
+    uk: |
+      Курс для студентів бакалаврату Одеського національного економічного університету: банківські ризики та їхнє
+      вимірювання, система банківського регулювання і Базельські стандарти, фінансова стійкість банку, похідні
+      інструменти в банках. Практика побудована на реальних даних НБУ: студенти пишуть коротку «записку про ризики»
+      щодо закріпленого банку і перевіряють його стійкість до стандартизованого макрофінансового шоку.
+    en: |
+      An undergraduate course at Odesa National Economic University: banking risks and how to measure them, the system
+      of banking regulation and the Basel standards, bank financial resilience and derivatives in banks. The practical
+      part uses real NBU data: students write a short “risk note” on an assigned bank and test its resilience to a
+      standardised macro-financial shock.
+  groups:
+    - title: {uk: "Лекції", en: "Lectures"}
+      items:
+        - {title: {uk: "Лекція 1. Ризик, невизначеність і банківські ризики: слайди", en: "Lecture 1. Risk, uncertainty and banking risks: slides"}, file: teaching/banking/lecture_01_risk_theory_slides.pdf}
+        - {title: {uk: "Лекція 1. Повна теоретична версія з виведеннями", en: "Lecture 1. Full theoretical version with derivations"}, file: teaching/banking/lecture_01_risk_theory_derivations.pdf}
+        - {title: {uk: "Банківські ризики: поняття і вимірювання", en: "Banking risks: concepts and measurement"}, file: teaching/banking/lecture_10_part1.pdf}
+        - {title: {uk: "Теми 9–11. Система регулювання банківської діяльності та фінансова стійкість банку (Базель, CAMELSO)", en: "Topics 9–11. Banking regulation and bank financial stability (Basel, CAMELSO)"}, file: teaching/banking/lecture_09_11_bank_risk_management.pdf}
+        - {title: {uk: "Похідні фінансові інструменти в банках: презентація", en: "Derivatives used by banks: presentation (Ukrainian)"}, file: teaching/banking/lecture_derivatives_in_banks.pdf}
+    - title: {uk: "Практика", en: "Practice"}
+      items:
+        - {title: {uk: "Problem Set 1. Прикладний аналіз банківських ризиків", en: "Problem Set 1. Applied banking risk analysis"}, file: teaching/banking/problem_set_1_topics_9_11.pdf}
+        - {title: {uk: "Problem Set 1: дані", en: "Problem Set 1: data"}, file: teaching/banking/problem_set_1_topics_9_11_data.xlsx}
+        - {title: {uk: "Problem Set 1: розв'язок", en: "Problem Set 1: solution"}, file: teaching/banking/problem_set_1_topics_9_11_solution.xlsx}
+        - {title: {uk: "Problem Set 2. Система банківського регулювання", en: "Problem Set 2. The system of banking regulation"}, file: teaching/banking/problem_set_2.pdf}
+        - {title: {uk: "Кейс: аналіз банківських ризиків, розв'язки T1–T9", en: "Case: banking risk analysis, solutions T1–T9"}, file: teaching/banking/case_bank_risk.pdf}
+    - title: {uk: "Аналітичні додатки", en: "Analytical supplements"}
+      items:
+        - {title: {uk: "Макрофінансовий огляд банківської системи України, 2016–2026", en: "Macro-financial review of the Ukrainian banking system, 2016–2026"}, file: teaching/banking/macro_supplement.pdf}
+        - {title: {uk: "Дані макрофінансового огляду", en: "Macro-financial review: data"}, file: teaching/banking/macro_supplement_data.xlsx}
+        - {title: {uk: "Академічний звіт: ризики і результати банківської системи України", en: "Academic report: risk and performance of the Ukrainian banking system"}, file: teaching/banking/report_ukraine_banking_system.pdf}
+        - {title: {uk: "Звіт: похідні фінансові інструменти, які використовують банки", en: "Report: derivatives used by banks (Ukrainian)"}, file: teaching/banking/report_derivatives_in_banks.pdf}
+
+- path: club/intro-economics.html
+  active: club.html
+  parent: club.html
+  parent_label: {uk: "Макрофінансовий клуб", en: "Macro and Finance Club"}
+  title: {uk: "Вступ до економіки", en: "Introduction to Economics"}
+  subtitle: {uk: "Introduction to Economics · ОНЕУ, осінь 2026", en: "Вступ до економіки · ONEU, autumn 2026"}
+  description:
+    uk: |
+      Курс мікро- і макроекономіки, який я викладаю в ОНЕУ: від поведінки споживача і фірми до ВВП, грошей, монетарної та
+      фіскальної політики і відкритої економіки. Лекції 9–13 містять слайди «Кейс» із новинами осені 2026 р. Оцінювання
+      складається з п'яти Problem Sets і п'яти групових кейсів. Курс підтримує математичний буткемп.
+      Вихідні тексти всіх лекцій і завдань у LaTeX — наприкінці сторінки.
+    en: |
+      A micro- and macroeconomics course I teach at ONEU, from consumer and firm behaviour to GDP, money, monetary and
+      fiscal policy and the open economy. Lectures 9–13 include “Case” slides built on autumn 2026 news. Assessment is
+      based on five problem sets and five group cases, supported by a maths bootcamp. Lectures and assignments are in
+      Ukrainian; the LaTeX sources are at the end of the page.
+  topics_title: {uk: "Лекції", en: "Lectures"}
+  topics:
+    - {n: 3, title: {uk: "Модель поведінки споживача", en: "Consumer behaviour"}, slides: club/intro-economics/lecture_03.pdf, practice: [{label: {uk: "Практикум", en: "Workshop"}, file: club/intro-economics/seminar_03.pdf}, {label: {uk: "Задачі з розв'язками", en: "Worked problems"}, file: club/intro-economics/week_03_sample_problems.pdf}]}
+    - {n: 4, title: {uk: "Аналіз добробуту, публічні блага, екстерналії", en: "Welfare, public goods and externalities"}, slides: club/intro-economics/lecture_04.pdf}
+    - {n: 5, title: {uk: "Модель фірми: виробництво, витрати, прибуток", en: "The firm: production, costs and profit"}, slides: club/intro-economics/lecture_05.pdf}
+    - {n: 6, title: {uk: "Конкуренція та ринкові структури", en: "Competition and market structures"}, slides: club/intro-economics/lecture_06.pdf}
+    - {n: 7, title: {uk: "Олігополія та основи теорії ігор", en: "Oligopoly and game theory basics"}, slides: club/intro-economics/lecture_07.pdf, practice: [{label: {uk: "Моделі олігополії (розширено)", en: "Oligopoly models (extended)"}, file: club/intro-economics/oligopoly_models_extended.pdf}]}
+    - {n: 8, title: {uk: "Ринок праці, людський капітал і нерівність", en: "Labour market, human capital and inequality"}, slides: club/intro-economics/lecture_08.pdf}
+    - {n: 9, title: {uk: "ВВП, інфляція і безробіття", en: "GDP, inflation and unemployment"}, slides: club/intro-economics/lecture_09.pdf, practice: [{label: {uk: "Завдання: ВВП", en: "Task: GDP"}, file: club/intro-economics/seminar_09_gdp.pdf}]}
+    - {n: 10, title: {uk: "Гроші, банки і створення грошей", en: "Money, banks and money creation"}, slides: club/intro-economics/lecture_10.pdf}
+    - {n: 11, title: {uk: "Монетарна політика і модель AD–AS", en: "Monetary policy and the AD–AS model"}, slides: club/intro-economics/lecture_11.pdf}
+    - {n: 12, title: {uk: "Фіскальна політика, податки і борг", en: "Fiscal policy, taxes and debt"}, slides: club/intro-economics/lecture_12.pdf}
+    - {n: 13, title: {uk: "Міжнародна торгівля і валютний курс", en: "International trade and the exchange rate"}, slides: club/intro-economics/lecture_13.pdf}
+  groups:
+    - title: {uk: "Problem Sets", en: "Problem sets"}
+      items:
+        - {title: {uk: "Problem Set 1", en: "Problem Set 1"}, file: club/intro-economics/problem_set_1.pdf}
+        - {title: {uk: "Problem Set 2: попит і пропозиція, ринкова рівновага", en: "Problem Set 2: supply, demand and equilibrium"}, file: club/intro-economics/problem_set_2.pdf}
+        - {title: {uk: "Problem Set 3: витрати фірми і ринкові структури", en: "Problem Set 3: costs and market structures"}, file: club/intro-economics/problem_set_3.pdf}
+        - {title: {uk: "Problem Set 4: ВВП, інфляція, гроші (теми 8–10)", en: "Problem Set 4: GDP, inflation, money (topics 8–10)"}, file: club/intro-economics/problem_set_4.pdf}
+        - {title: {uk: "Problem Set 5: монетарна і фіскальна політика (теми 10–12)", en: "Problem Set 5: monetary and fiscal policy (topics 10–12)"}, file: club/intro-economics/problem_set_5.pdf}
+    - title: {uk: "Групові кейси", en: "Group cases"}
+      items:
+        - {title: {uk: "Кейс 1. Держава на ринку", en: "Case 1. The government in the market"}, file: club/intro-economics/case_1_government_on_the_market.pdf}
+        - {title: {uk: "Кейс 2. Хто заробляє на цьому ринку?", en: "Case 2. Who earns in this market?"}, file: club/intro-economics/case_2_who_earns_on_this_market.pdf}
+        - {title: {uk: "Кейс 3. Економіка під тиском", en: "Case 3. An economy under pressure"}, file: club/intro-economics/case_3_economy_under_pressure.pdf}
+        - {title: {uk: "Кейс 4. Ставку змінювати чи ні?", en: "Case 4. To change the rate or not?"}, file: club/intro-economics/case_4_to_change_the_rate_or_not.pdf}
+        - {title: {uk: "Кейс 5. Один шок — ціла економіка", en: "Case 5. One shock, the whole economy"}, file: club/intro-economics/case_5_one_shock_whole_economy.pdf}
+    - title: {uk: "Організація курсу та додаткові матеріали", en: "Course organisation and extras"}
+      items:
+        - {title: {uk: "Система оцінювання", en: "Assessment"}, file: club/intro-economics/assessment.pdf}
+        - {title: {uk: "Математичний буткемп", en: "Maths bootcamp"}, file: club/intro-economics/math_bootcamp.pdf}
+        - {title: {uk: "R-скрипт: макродані України з API НБУ для кейсів", en: "R script: Ukrainian macro data from the NBU API for the cases"}, file: club/intro-economics/Ukraine_NBU_macro_pipeline_v2.R}
+        - {title: {uk: "Вихідні LaTeX-файли лекцій, завдань і кейсів", en: "LaTeX sources of lectures, assignments and cases"}, file: club/intro-economics/latex_sources.zip}
+
+- path: club/corporate-finance.html
+  active: club.html
+  parent: club.html
+  parent_label: {uk: "Макрофінансовий клуб", en: "Macro and Finance Club"}
+  title: {uk: "Корпоративні фінанси та оцінка бізнесу: мінікурс", en: "Corporate Finance and Business Valuation: mini-course"}
+  subtitle: {uk: "Макроекономічний та фінансовий клуб ОНЕУ, березень–серпень 2026", en: "ONEU Macroeconomics and Finance Club, March–August 2026"}
+  description:
+    uk: |
+      Інтенсивний курс клубу на реальних даних українських компаній: фінансова звітність і бізнес-рішення, операційна
+      діяльність і структура балансу, економіка бізнес-моделі та юніт-економіка, визнання виручки за типом компанії.
+      Кожне заняття має домашнє завдання й Excel-модель. Фінальний проєкт присвячено аналізу ТОВ «Сільпо-Фуд». Окремий модуль готує до банківського стажування в кредитному підрозділі.
+    en: |
+      An intensive club course built on real data from Ukrainian companies: financial statements and business decisions,
+      operations and balance sheet structure, business model and unit economics, revenue recognition by company type.
+      Each class comes with a homework and an Excel model. The final project analyses Silpo-Food LLC. A separate module prepares students for a banking internship in a credit unit.
+  groups:
+    - title: {uk: "Заняття", en: "Classes"}
+      items:
+        - {title: {uk: "Заняття 1. Основи фінансового обліку: фінансова звітність і бізнес-рішення", en: "Class 1. Financial statements and business decisions"}, file: club/corporate-finance/L1_financial_statements_business_decisions.pdf}
+        - {title: {uk: "Заняття 1. Додаткові слайди: логіка корпоративних фінансів", en: "Class 1. Supplementary slides: corporate finance logic"}, file: club/corporate-finance/L1_additional_slides.pdf}
+        - {title: {uk: "Заняття 1. Excel: вступ до обліку", en: "Class 1. Excel: intro to accounting"}, file: club/corporate-finance/L1_intro_to_accounting.xlsx}
+        - {title: {uk: "Заняття 2. Операційна діяльність і структура балансу", en: "Class 2. Business operations and balance sheet structure"}, file: club/corporate-finance/L2_business_operations_balance_sheet.pdf}
+        - {title: {uk: "Заняття 2. Домашнє завдання 1", en: "Class 2. Homework 1"}, file: club/corporate-finance/L2_homework_1.pdf}
+        - {title: {uk: "Заняття 2. Excel: модель трьох звітів", en: "Class 2. Excel: three-statement model"}, file: club/corporate-finance/L2_three_statement_model.xlsx}
+        - {title: {uk: "Заняття 3. Економіка бізнес-моделі та юніт-економіка", en: "Class 3. Business model economics and unit economics"}, file: club/corporate-finance/L3_business_model_unit_economics.pdf}
+        - {title: {uk: "Заняття 3. Оцінка виручки за типом компанії", en: "Class 3. Revenue evaluation by company type"}, file: club/corporate-finance/L3_business_revenue.pdf}
+    - title: {uk: "Кейси та фінальний проєкт", en: "Cases and final project"}
+      items:
+        - {title: {uk: "Кейс: ТОВ «АТБ-Маркет» і «Таврія В»", en: "Case: ATB-Market and Tavria V (Ukrainian)"}, file: club/corporate-finance/case_ATB_Tavria_V.pdf}
+        - {title: {uk: "Типи спеціалізованих кредитів за Положенням НБУ № 351", en: "Types of specialised lending under NBU Regulation No. 351 (Ukrainian)"}, file: club/corporate-finance/specialised_lending_types_NBU_351.pdf}
+        - {title: {uk: "Фінальний проєкт: ТОВ «Сільпо-Фуд»", en: "Final project: Silpo-Food LLC"}, file: club/corporate-finance/final_project_Silpo.pdf}
+    - title: {uk: "Модуль банківського стажування: структура капіталу", en: "Banking internship module: capital structure"}
+      desc: {uk: "Підготовка до роботи в кредитному підрозділі банку. Структура капіталу, боргова місткість і оптимальне співвідношення боргу та власного капіталу на прикладі реальної української компанії.", en: "Preparation for work in a bank's credit unit. Capital structure, debt capacity and the optimal mix of debt and equity, applied to a real Ukrainian company."}
+      items:
+        - {title: {uk: "Лекції 1–2. Структура капіталу", en: "Lectures 1–2. Capital structure"}, file: club/banking-internship/L1_2_capital_structure.pdf}
+        - {title: {uk: "Завдання 1. Діагностика структури капіталу та боргової місткості", en: "Assignment 1. Capital structure and debt capacity diagnostics"}, file: club/banking-internship/assignment_1_optimal_capital_structure.pdf}
+
+- path: club/monetary-policy.html
+  active: club.html
+  parent: club.html
+  parent_label: {uk: "Макрофінансовий клуб", en: "Macro and Finance Club"}
+  title: {uk: "Новокейнсіанська модель монетарної політики", en: "The New Keynesian Model of Monetary Policy"}
+  subtitle: {uk: "Курс лекцій Макроекономічного та фінансового клубу ОНЕУ, березень–червень 2026", en: "ONEU Macroeconomics and Finance Club lecture course, March–June 2026"}
+  description:
+    uk: |
+      Повний курс про сучасну модель монетарної політики, 169 слайдів. Від класичної дихотомії, кривої Філліпса і критики
+      Лукаса — до рівняння Ейлера, динамічної IS, ціноутворення за Кальво, новокейнсіанської кривої Філліпса, правила
+      Тейлора та принципу Тейлора, імпульсних відгуків на монетарний, попитовий і витратний шоки. Окремі блоки
+      присвячено архітектурі DSGE/QPM, нульовій нижній межі й QE, каналу валютного курсу, фінансовому акселератору,
+      HANK і монетарній політиці України у воєнний час.
+    en: |
+      A full course on the modern model of monetary policy, 169 slides. It runs from the classical dichotomy, the
+      Phillips curve and the Lucas critique to the Euler equation, the dynamic IS curve, Calvo pricing, the New Keynesian
+      Phillips curve, the Taylor rule and Taylor principle, and impulse responses to monetary, demand and cost-push
+      shocks. Further blocks cover DSGE/QPM architecture, the zero lower bound and QE, the exchange rate channel, the
+      financial accelerator, HANK and Ukraine's wartime monetary policy.
+  groups:
+    - title: {uk: "Матеріали", en: "Materials"}
+      items:
+        - {title: {uk: "Курс «Новокейнсіанська модель монетарної політики» (слайди)", en: "Course slides: New Keynesian Monetary Policy Model"}, file: club/monetary-policy/new_keynesian_monetary_policy_course.pdf}
+
+- path: club/lectures.html
+  active: club.html
+  parent: club.html
+  parent_label: {uk: "Макрофінансовий клуб", en: "Macro and Finance Club"}
+  title: {uk: "Відкриті лекції та обговорення", en: "Open lectures and discussions"}
+  subtitle: {uk: "Фінансовий клуб ОНЕУ", en: "ONEU Finance Club"}
+  description:
+    uk: "Відкриті лекції клубу для студентів і всіх охочих, а також обговорення наукових робіт у форматі дискусанта."
+    en: "Open club lectures for students and anyone interested, and paper discussions in a discussant format."
+  groups:
+    - title: {uk: "30 травня 2026 · Сутність інфляції у світі та в Україні", en: "30 May 2026 · The essence of inflation in the world and in Ukraine"}
+      desc: {uk: "Інфляція в США, єврозоні та Україні: компоненти, механізм, криві Філліпса, функція втрат центрального банку, шляхи дезінфляції, VAR і прогнози.", en: "Inflation in the US, the euro area and Ukraine: components, mechanisms, Phillips curves, the central bank loss function, disinflation paths, VARs and forecasts."}
+      items:
+        - {title: {uk: "Слайди лекції", en: "Lecture slides"}, file: club/lectures/2026-05-30_inflation_world_ukraine.pdf}
+        - {title: {uk: "Очищені дані (FRED, ЄЦБ, НБУ) і словники змінних", en: "Clean data (FRED, ECB, NBU) and variable dictionaries"}, file: club/lectures/2026-05-30_inflation_data_clean.zip}
+    - title: {uk: "13 червня 2026 · Обговорення роботи «Соціальне страхування в Україні»", en: "13 June 2026 · Discussion of the paper “Social insurance in Ukraine”"}
+      items:
+        - {title: {uk: "Слайди дискусанта", en: "Discussant slides (Ukrainian)"}, file: club/lectures/2026-06-13_paper_discussion.pdf}
+    - title: {uk: "ONEU Monthly Economic Outlook", en: "ONEU Monthly Economic Outlook"}
+      items:
+        - {title: {uk: "Методика розрахунку дохідності до погашення (YTM)", en: "Yield-to-maturity (YTM) calculation methodology (Ukrainian)"}, file: club/outlook/YTM_calculation_methodology.pdf}

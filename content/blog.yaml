@@ -1,0 +1,28 @@
+intro:
+  uk: "Детальні записи про мої дослідження і ринок. Кожен запис пояснює питання, метод вимірювання, результати та їхнє значення для банків, інвесторів і регулятора. Дані, код і повні тексти доступні на сторінках проєктів."
+  en: "In-depth posts on my research and on the market. Each post explains the question, the measurement, the results and what they mean for banks, investors and the regulator. Data, code and full texts are on the project pages."
+sections:
+  - key: master
+    title: {uk: "Магістерське дослідження: фондування, переоцінювання, розподіл активів", en: "Master's thesis: funding, repricing and asset allocation"}
+    link: research/master.html
+    link_label: {uk: "матеріали", en: "materials"}
+  - key: bachelor
+    title: {uk: "Системний ризик банківського сектору", en: "Systemic risk in the banking sector"}
+    link: research/bachelor.html
+    link_label: {uk: "матеріали", en: "materials"}
+  - key: interbank
+    title: {uk: "Міжбанківські мережі", en: "Interbank networks"}
+    link: research/interbank.html
+    link_label: {uk: "матеріали", en: "materials"}
+  - key: esg
+    title: {uk: "ESG-ризики банківських груп", en: "ESG risks of banking groups"}
+    link: research/esg.html
+    link_label: {uk: "матеріали", en: "materials"}
+  - key: markets
+    title: {uk: "Ринок акцій українських компаній", en: "Ukrainian equities"}
+    link: analytics/ulci.html
+    link_label: {uk: "дашборд ULCI", en: "ULCI dashboard"}
+  - key: club
+    title: {uk: "Аналітичні записки клубу", en: "Club research notes"}
+    link: club.html
+    link_label: {uk: "клуб", en: "club"}

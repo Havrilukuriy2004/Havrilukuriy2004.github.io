@@ -1,0 +1,23 @@
+# LaTeX-макроси, доступні в усіх записах блогу (як \newcommand у преамбулі).
+# Формат: ім'я без \ : визначення. Для макроса з аргументами: [визначення, кількість аргументів].
+CoF: "\\mathrm{CoF}"
+GAP: "\\mathrm{GAP}"
+NII: "\\mathrm{NII}"
+RSA: "\\mathrm{RSA}"
+RSL: "\\mathrm{RSL}"
+IBL: "\\mathrm{IBL}"
+TA: "\\mathrm{TA}"
+rkey: "r^{\\mathrm{key}}"
+rD: "r^{\\mathrm{D}}"
+rDC: "r^{\\mathrm{DC}}"
+E: "\\mathbb{E}"
+Var: "\\operatorname{Var}"
+Cov: "\\operatorname{Cov}"
+d: "\\mathrm{d}"
+R: "\\mathbb{R}"
+abs: ["\\left\\lvert #1 \\right\\rvert", 1]
+# Кольорове виділення складових формул (палітра сайту)
+cb: ["{\\color[RGB]{42,120,214}{#1}}", 1]
+co: ["{\\color[RGB]{210,85,31}{#1}}", 1]
+cg: ["{\\color[RGB]{19,138,94}{#1}}", 1]
+cv: ["{\\color[RGB]{122,92,196}{#1}}", 1]

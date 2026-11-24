@@ -1,0 +1,129 @@
+intro:
+  uk: |
+    Робочі інструменти, що виросли з моїх досліджень. Два інтерактивні застосунки: банківський, про інвестиційну
+    діяльність банків, і ринковий, про індекс українських публічних компаній ULCI. Також тут ключові індикатори
+    банківської системи, Excel-моделі для аналізу банку чи компанії та відкриті набори даних.
+  en: |
+    Working tools that grew out of my research. Two interactive apps, one on the investment activity of banks and one on
+    ULCI, an index of Ukrainian listed companies, plus key banking system indicators, Excel models for analysing a bank
+    or a company, and open datasets.
+dashboards:
+  - id: banks
+    page: analytics/banks.html
+    url: "https://bank-dashboard-oneu.streamlit.app/"
+    tag: {uk: "Банки", en: "Banks"}
+    title: {uk: "Інвестиційна діяльність банків України", en: "Investment activity of Ukrainian banks"}
+    desc:
+      uk: "Структура інвестиційного портфеля, дохідність інвестицій і фінансовий результат від інвестиційної діяльності за окремими банками, групами і системою. Дані NBU OpenData."
+      en: "Structure of the investment portfolio, investment yield and the result from investment activity for individual banks, groups and the system. NBU OpenData."
+    code: analytics/nbu_streamlit_investment_dashboard_ua.zip
+  - id: ulci
+    page: analytics/ulci.html
+    url: "https://ulci-data.streamlit.app/"
+    tag: {uk: "Ринок акцій", en: "Equities"}
+    title: {uk: "ULCI: індекс українських публічних компаній", en: "ULCI: Ukraine Listed Companies Index"}
+    desc:
+      uk: "Українські компанії з лістингом у Варшаві, Лондоні, Торонто, Франкфурті, Парижі та на Nasdaq. Індекс, капіталізація, ліквідність, сектори і кількість акцій у free float."
+      en: "Ukrainian companies listed in Warsaw, London, Toronto, Frankfurt, Paris and on Nasdaq. The index, market capitalisation, liquidity, sectors and free-float share counts."
+    post: ulci-october-2026
+dash_open: {uk: "Відкрити в новому вікні ↗", en: "Open in a new window ↗"}
+dash_page: {uk: "Перейти до дашборду →", en: "Go to the dashboard →"}
+dash_code: {uk: "Код застосунку", en: "App source code"}
+dash_sleep: {uk: "Застосунки працюють на Streamlit Community Cloud і після простою запускаються до хвилини.", en: "The apps run on Streamlit Community Cloud and take up to a minute to wake up after inactivity."}
+dash_title: {uk: "Ключові індикатори банківської системи", en: "Key banking system indicators"}
+dash_sub: {uk: "Місячні дані з січня 2018 до серпня 2026 року. Пунктир позначає 24 лютого 2022 року. ", en: "Monthly data from January 2018 to August 2026. The dotted line marks 24 February 2022. "}
+dash_error: {uk: "Не вдалося завантажити дані дашборду. Відкрийте сторінку через веб-сервер (GitHub Pages) або завантажте CSV нижче.", en: "Could not load the dashboard data. Open the page via a web server (GitHub Pages) or download the CSV below."}
+dash_note:
+  uk: "Джерело: розрахунки автора за даними НБУ. Методологію описано в [магістерській роботі]({{site}}/research/master.html). Таблиця даних: [system_monthly.csv]({{files}}/master/data/system_monthly.csv), словник змінних [data_dictionary_uk.csv]({{files}}/master/data/data_dictionary_uk.csv)."
+  en: "Source: author's calculations based on NBU data. Methodology is described in the [master's thesis]({{site}}/research/master.html). Data table: [system_monthly.csv]({{files}}/master/data/system_monthly.csv), variable dictionary in Ukrainian [data_dictionary_uk.csv]({{files}}/master/data/data_dictionary_uk.csv)."
+charts:
+  - id: ch-rates
+    title: {uk: "Процентні ставки та інфляція", en: "Interest rates and inflation"}
+    desc: {uk: "Облікова ставка, ставка ДС овернайт, UONIA, дохідність ОВДП на 1 рік, інфляція (%).", en: "Policy rate, overnight CD rate, UONIA, 1-year OVDP yield, CPI inflation (%)."}
+  - id: ch-cost
+    title: {uk: "Номінальна та економічна вартість депозитів", en: "Reported and economic cost of deposits"}
+    desc: {uk: "Економічна вартість додає втрачений дохід на резервах і внески до ФГВФО (%).", en: "The economic cost adds income forgone on reserves and deposit guarantee levies (%)."}
+  - id: ch-deprates
+    title: {uk: "Ставки за гривневими депозитами за продуктами", en: "Hryvnia deposit rates by product"}
+    desc: {uk: "Кошти на вимогу і строкові депозити населення та бізнесу (%).", en: "Demand and term deposits of households and corporates (%)."}
+  - id: ch-structure
+    title: {uk: "Структура ресурсної бази", en: "Structure of the funding base"}
+    desc: {uk: "Частка коштів на вимогу, валютна частка, частка коштів населення (% коштів клієнтів).", en: "Demand deposit share, FX share and household share (% of customer funds)."}
+  - id: ch-alloc
+    title: {uk: "Розподільний портфель банків", en: "Bank allocation portfolio"}
+    desc: {uk: "Кредити, ОВДП, сертифікати НБУ та інші ліквідні активи (% портфеля).", en: "Loans, OVDP, NBU CDs and other liquid assets (% of the portfolio)."}
+  - id: ch-relret
+    title: {uk: "Відносна дохідність активів", en: "Relative returns on assets"}
+    desc: {uk: "Кредити й ОВДП відносно сертифікатів НБУ та маржа ДС над вартістю депозитів (в. п.).", en: "Loans and OVDP relative to NBU CDs, and the CD margin over the cost of deposits (pp)."}
+  - id: ch-gaps
+    title: {uk: "Розриви переоцінювання (12 міс.)", en: "Repricing gaps (12 months)"}
+    desc: {uk: "Виявлений і договірний розриви на 1 в. п. зміни облікової ставки (% активів).", en: "Revealed and contractual gaps per 1 pp change in the policy rate (% of assets)."}
+  - id: ch-volumes
+    title: {uk: "Обсяги балансу", en: "Balance sheet volumes"}
+    desc: {uk: "Кошти клієнтів, чисті кредити, ОВДП і сертифікати НБУ (млрд грн).", en: "Customer funds, net loans, OVDP and NBU CDs (UAH bn)."}
+  - id: ch-margin
+    title: {uk: "Дохідність, вартість і маржа", en: "Yields, costs and margin"}
+    desc: {uk: "Дохідність процентних активів і кредитів, чиста процентна маржа, вартість зобов'язань, вартість ризику (%).", en: "Yields on interest-earning assets and loans, net interest margin, cost of liabilities, cost of risk (%)."}
+  - id: ch-expect
+    title: {uk: "Інфляційні очікування та реальна ставка", en: "Inflation expectations and the real rate"}
+    desc: {uk: "Інфляція, очікування населення та аналітиків, реальна облікова ставка ex ante (%).", en: "Inflation, household and analyst expectations, ex ante real policy rate (%)."}
+bank_title: {uk: "Окремі банки та групи за власністю", en: "Individual banks and ownership groups"}
+bank_sub: {uk: "Оберіть банк, щоб побачити структуру його портфеля, вартість депозитів і запас капіталу. Нижче наведено медіани за типом власності. Пунктир на графіку запасу капіталу позначає поріг 5 в. п.", en: "Choose a bank to see its portfolio structure, cost of deposits and capital headroom. Below are medians by ownership. The dotted line on the headroom chart marks 5 pp."}
+bank_charts:
+  - [ch-bank-alloc, {uk: "Розподільний портфель банку, %", en: "Bank's allocation portfolio, %"}]
+  - [ch-bank-cod, {uk: "Вартість депозитів: банк і система, %", en: "Cost of deposits: bank and system, %"}]
+  - [ch-bank-head, {uk: "Запас капіталу банку до мінімуму, в. п.", en: "Bank's capital headroom over the minimum, pp"}]
+  - [ch-grp-loans, {uk: "Медіанна частка кредитів за типом власності, %", en: "Median loan share by ownership, %"}]
+  - [ch-grp-head, {uk: "Медіанний запас капіталу за типом власності, в. п.", en: "Median capital headroom by ownership, pp"}]
+tools_title: {uk: "Excel-інструменти", en: "Excel tools"}
+tools_intro:
+  uk: "Чотири робочі моделі з даними всіх банків станом на серпень 2026 р. Оберіть банк на першому аркуші, і всі таблиці, графіки та сценарії перерахуються. Кожен інструмент має українську та англійську версію і аркуш методології."
+  en: "Four working models with data for all banks as of August 2026. Choose a bank on the first sheet and every table, chart and scenario recalculates. Each tool comes in Ukrainian and English and has a methodology sheet."
+tools:
+  - tag: {uk: "Інструмент 12", en: "Tool 12"}
+    title: {uk: "Процентний ризик балансу і прихована вартість фондування", en: "Balance sheet interest rate risk and hidden cost of funding"}
+    desc:
+      uk: "Профіль банку: договірний і виявлений розрив переоцінювання, економічна вартість депозитів з урахуванням резервних вимог, порівняння банків, динаміка за 60 місяців, трансмісія облікової ставки. Припущення (нормативи резервування, β, λ, дюрації) можна редагувати."
+      en: "Bank profile: contractual and revealed repricing gaps, economic cost of deposits including reserve requirements, bank comparison, 60-month dynamics and policy rate transmission. Assumptions (reserve ratios, β, λ, durations) are editable."
+    files:
+      - {label: "UA", file: master/excel/Bank_Repricing_Funding_Tool_UA.xlsx}
+      - {label: "EN", file: master/excel/Bank_Repricing_Funding_Tool_EN.xlsx}
+  - tag: {uk: "Інструмент 13", en: "Tool 13"}
+    title: {uk: "Стрес-тестування IRRBB", en: "IRRBB stress test"}
+    desc:
+      uk: "12 сценаріїв за стандартами BCBS і практикою НБУ: драбина переоцінювання, PV01, ΔEVE і ΔNII, договірний розрив проти виявленої передачі ставок, історична симуляція на кривій НБУ, зворотний стрес-тест, стрес-тест усіх банків і стохастичний NII (Монте-Карло процесів Орнштейна–Уленбека)."
+      en: "12 scenarios under BCBS standards and NBU practice: repricing ladder, PV01, ΔEVE and ΔNII, contractual gap vs revealed pass-through, historical simulation on the NBU curve, reverse stress test, a stress test of all banks and stochastic NII (Monte Carlo of Ornstein–Uhlenbeck processes)."
+    files:
+      - {label: "UA", file: master/excel/IRRBB_Stress_Test_UA.xlsx}
+      - {label: "EN", file: master/excel/IRRBB_Stress_Test_EN.xlsx}
+  - tag: {uk: "Інструмент 18", en: "Tool 18"}
+    title: {uk: "Активи банку, відносна дохідність і капітал", en: "Bank assets, relative returns and capital"}
+    desc:
+      uk: "Структура активів і дохідності, тіньова ціна капіталу та мінімальна ставка кредиту, бізнес-модель, контрфактичні сценарії, трансмісія облікової ставки в дохідності активів і композитний скоринг раннього попередження."
+      en: "Asset structure and yields, the shadow price of capital and the minimum loan rate, business model, counterfactual scenarios, policy rate transmission to asset yields and a composite early-warning score."
+    files:
+      - {label: "UA", file: master/excel/Bank_Assets_Tool_UA.xlsx}
+      - {label: "EN", file: master/excel/Bank_Assets_Tool_EN.xlsx}
+  - tag: {uk: "Інструмент 19", en: "Tool 19"}
+    title: {uk: "Клас боржника за Положенням № 351 і кредитний ризик", en: "Borrower class under Regulation No. 351 and credit risk"}
+    desc:
+      uk: "Клас боржника за моделями додатка 7, з урахуванням постанови НБУ № 23 і PD, групи пов'язаних контрагентів, кредитний ризик за продуктом за Положенням № 351, МСФЗ 9, стандартизованим підходом і IRB, пакетний розрахунок для всіх позичальників."
+      en: "Borrower class under the Annex 7 models, NBU Resolution No. 23 and PD, groups of related counterparties, credit risk by product under Regulation No. 351, IFRS 9, the standardised approach and IRB, batch calculation for all borrowers."
+    files:
+      - {label: "UA", file: master/excel/Borrower_Class_Credit_Risk_Tool_UA.xlsx}
+      - {label: "EN", file: master/excel/Borrower_Class_Credit_Risk_Tool_EN.xlsx}
+  - tag: {uk: "Streamlit", en: "Streamlit"}
+    title: {uk: "Дашборд інвестиційної діяльності банків (Streamlit)", en: "Bank investment activity dashboard (Streamlit)"}
+    desc:
+      uk: "Застосунок на Python для аналізу інвестиційних вкладень і доходів від інвестиційної діяльності окремого банку, групи чи всієї системи за даними NBU OpenData (banksfinrep): структура портфеля, waterfall фінрезультату, позиціонування банків, експорт у Excel. Запуск: `streamlit run app.py`."
+      en: "A Python app for analysing the investment holdings and investment income of a bank, a group or the whole system from NBU OpenData (banksfinrep): portfolio structure, a result waterfall, bank positioning and Excel export. Run with `streamlit run app.py` (interface in Ukrainian)."
+    files:
+      - {label: {uk: "Код застосунку", en: "App code"}, file: analytics/nbu_streamlit_investment_dashboard_ua.zip}
+data_title: {uk: "Відкриті набори даних", en: "Open datasets"}
+data_groups:
+  - title: {uk: "Дані дашборду", en: "Dashboard data"}
+    items:
+      - {title: {uk: "Місячні показники банківської системи, 2018–2026", en: "Monthly banking system indicators, 2018–2026"}, file: master/data/system_monthly.csv}
+      - {title: {uk: "Панель банків, 2018–2026", en: "Bank panel, 2018–2026"}, file: master/data/banks_panel.csv}
+      - {title: {uk: "Словник змінних", en: "Variable dictionary (Ukrainian)"}, file: master/data/data_dictionary_uk.csv}
+      - {title: {uk: "Вітрини даних НБУ (Parquet)", en: "NBU data marts (Parquet)"}, file: master/database/nbu_thesis_marts_v6_parquet.zip}
