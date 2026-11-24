@@ -398,7 +398,76 @@ def page(ctx, title, body, *, active="", math=False, description="", wide=False,
 """
 
 
+NUM_CELL = re.compile(r"^[\s\u2212+\-–(]*[\d.,\s\u202f]+[%*ᵃᵇᶜ)\s]*(\([\d.,\s\u2212-]+\)[*\s]*)?$")
+
+
+def _cell_class(body):
+    plain = re.sub(r"<[^>]+>", "", body).strip()
+    if not plain:
+        return None
+    if NUM_CELL.match(plain) and len(plain) < 30:
+        return "n"
+    return "t tl" if len(plain) > 30 else "t"
+
+
+def _tag_table(m):
+    table = m.group(0)
+    rows = re.findall(r"<tr[^>]*>.*?</tr>", table, flags=re.S)
+    numcols = {}
+    for r in rows:
+        for i, (_, body) in enumerate(re.findall(r"<td([^>]*)>(.*?)</td>", r, flags=re.S)):
+            c = _cell_class(body)
+            if c:
+                numcols.setdefault(i, []).append(c == "n")
+
+    def fix_row(rm):
+        row = rm.group(0)
+        idx = [0]
+
+        def td(cm):
+            attrs, body = cm.group("a"), cm.group("b")
+            i = idx[0]; idx[0] += 1
+            if "class=" in attrs:
+                return cm.group(0)
+            c = _cell_class(body) or "t"
+            if c == "n" and " (" in body:
+                a, b2 = body.split(" (", 1)
+                body = f'<span class="nw">{a}</span> <span class="nw">({b2}</span>'
+            return f'<td class="{c}"{attrs}>{body}</td>'
+
+        def th(cm):
+            attrs, body = cm.group("a"), cm.group("b")
+            i = idx[0]; idx[0] += 1
+            v = numcols.get(i, [])
+            if "class=" not in attrs and i > 0 and v and sum(v) > len(v) / 2:
+                return f'<th class="n"{attrs}>{body}</th>'
+            return cm.group(0)
+
+        def cell(cm):
+            return (td if cm.group("tag") == "td" else th)(cm)
+
+        return re.sub(r"<(?P<tag>t[hd])(?P<a>[^>]*)>(?P<b>.*?)</(?P=tag)>", cell, row, flags=re.S)
+
+    out = re.sub(r"<tr[^>]*>.*?</tr>", fix_row, table, flags=re.S)
+    ncols = max((len(re.findall(r"<t[hd][ >]", r)) for r in rows), default=0)
+    if ncols >= 8:
+        out = re.sub(r"^<table(?![^>]*class=)", '<table class="wide"', out)
+    return out
+
+
+def tag_table_cells(html_text):
+    def one(m):
+        pre, table = m.group(1), m.group(2)
+        out = _tag_table(re.match(r".*", table, flags=re.S))
+        if pre or table.startswith("<table class="):
+            return (pre or "") + out
+        return f'<div class="tscroll">{out}</div>'
+
+    return re.sub(r'(<div class="dtable-scroll">\s*)?(<table[^>]*>.*?</table>)', one, html_text, flags=re.S)
+
+
 def write(ctx, html_text):
+    html_text = tag_table_cells(html_text)
     p = OUT / PREFIX[ctx.lang] / ctx.path
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(html_text, encoding="utf-8")

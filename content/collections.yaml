@@ -21,9 +21,6 @@
   groups:
     - title: {uk: "Лекції", en: "Lectures"}
       items:
-        - {title: {uk: "Лекція 1. Ризик, невизначеність і банківські ризики: слайди", en: "Lecture 1. Risk, uncertainty and banking risks: slides"}, file: teaching/banking/lecture_01_risk_theory_slides.pdf}
-        - {title: {uk: "Лекція 1. Повна теоретична версія з виведеннями", en: "Lecture 1. Full theoretical version with derivations"}, file: teaching/banking/lecture_01_risk_theory_derivations.pdf}
-        - {title: {uk: "Банківські ризики: поняття і вимірювання", en: "Banking risks: concepts and measurement"}, file: teaching/banking/lecture_10_part1.pdf}
         - {title: {uk: "Теми 9–11. Система регулювання банківської діяльності та фінансова стійкість банку (Базель, CAMELSO)", en: "Topics 9–11. Banking regulation and bank financial stability (Basel, CAMELSO)"}, file: teaching/banking/lecture_09_11_bank_risk_management.pdf}
         - {title: {uk: "Похідні фінансові інструменти в банках: презентація", en: "Derivatives used by banks: presentation (Ukrainian)"}, file: teaching/banking/lecture_derivatives_in_banks.pdf}
     - title: {uk: "Практика", en: "Practice"}
