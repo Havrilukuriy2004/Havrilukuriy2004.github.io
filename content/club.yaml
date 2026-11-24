@@ -21,8 +21,8 @@ about:
     finance, banking, macroeconomics and financial modelling on real data, and write research notes in the format used
     by central banks.
 activities:
-  uk: ["Курси клубу: вступ до економіки, корпоративні фінанси з модулем банківського стажування, монетарна політика", "Відкриті лекції та обговорення наукових робіт", "Аналітичні записки та ONEU Monthly Economic Outlook", "Воркшопи з Excel, Python і R"]
-  en: ["Club courses: introduction to economics, corporate finance with a banking internship module, monetary policy", "Open lectures and paper discussions", "Research notes and the ONEU Monthly Economic Outlook", "Excel, Python and R workshops"]
+  uk: ["Курси клубу: вступ до економіки, корпоративні фінанси з модулем банківського стажування, монетарна політика", "Research workshop: командні емпіричні дослідження", "Відкриті лекції та обговорення наукових робіт", "Аналітичні записки та ONEU Monthly Economic Outlook", "Воркшопи з Excel, Python і R"]
+  en: ["Club courses: introduction to economics, corporate finance with a banking internship module, monetary policy", "Research workshop with team empirical projects", "Open lectures and paper discussions", "Research notes and the ONEU Monthly Economic Outlook", "Excel, Python and R workshops"]
 categories:
   - tag: {uk: "Курс", en: "Course"}
     title: {uk: "Вступ до економіки", en: "Introduction to Economics"}
@@ -36,6 +36,10 @@ categories:
     title: {uk: "Новокейнсіанська модель монетарної політики", en: "New Keynesian Monetary Policy"}
     desc: {uk: "Повний курс лекцій від кривої Філліпса до QPM і монетарної політики України.", en: "A full lecture course from the Phillips curve to QPM and Ukraine."}
     page: club/monetary-policy.html
+  - tag: {uk: "Воркшоп", en: "Workshop"}
+    title: {uk: "Research workshop", en: "Research workshop"}
+    desc: {uk: "Як провести економетричне дослідження від ідеї до готової роботи. Чотири командні проєкти, слайди, дані та Excel-розрахунки.", en: "How to run an econometric study from an idea to a finished paper. Four team projects, slides, data and Excel calculations."}
+    page: club/research-workshop.html
   - tag: {uk: "Лекції", en: "Lectures"}
     title: {uk: "Відкриті лекції та обговорення", en: "Open lectures and discussions"}
     desc: {uk: "Інфляція у світі та в Україні, обговорення робіт, методика ONEU Outlook.", en: "Inflation in the world and Ukraine, paper discussions, ONEU Outlook methodology."}

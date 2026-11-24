@@ -37,6 +37,151 @@
         - {title: {uk: "Академічний звіт: ризики і результати банківської системи України", en: "Academic report: risk and performance of the Ukrainian banking system"}, file: teaching/banking/report_ukraine_banking_system.pdf}
         - {title: {uk: "Звіт: похідні фінансові інструменти, які використовують банки", en: "Report: derivatives used by banks (Ukrainian)"}, file: teaching/banking/report_derivatives_in_banks.pdf}
 
+- path: teaching/kse-math-1-1.html
+  active: teaching.html
+  parent: teaching.html
+  parent_label: {uk: "Викладання", en: "Teaching"}
+  title: {uk: "Математика для економістів 1.1", en: "Mathematics for Economists 1.1"}
+  subtitle: {uk: "Асистент викладача · KSE, MA in Economic Analysis, осінь 2026", en: "Teaching assistant · KSE, MA in Economic Analysis, autumn 2026"}
+  description:
+    uk: |
+      Матеріали TA-сесій першого модуля математики магістерської програми Київської школи економіки. Функції та їхні
+      графіки, похідні, екстремуми й опуклість, еластичність, виробничі функції та мінімізація середніх витрат,
+      системи лінійних рівнянь і матрична форма. Кожна сесія містить короткий теоретичний блок і задачі з повними
+      розв'язками. Матеріали англійською.
+    en: |
+      TA session materials for the first mathematics module of the MA in Economic Analysis at the Kyiv School of
+      Economics. Functions and graphs, derivatives, extrema and concavity, elasticity, production functions and average
+      cost minimisation, linear systems and matrix notation. Each session has a short theory block and exercises with
+      full solutions.
+  groups:
+    - title: {uk: "TA-сесії", en: "TA sessions"}
+      items:
+        - {title: {uk: "Сесія 1. Функції, графіки, області визначення (слайди)", en: "Session 1. Functions, graphs and domains (slides)"}, file: teaching/kse/math-1-1/ta_session_1_functions_graphs.pdf}
+        - {title: {uk: "Сесія 2. Критичні точки, екстремуми, опуклість, еластичність", en: "Session 2. Critical points, extrema, concavity and elasticity"}, file: teaching/kse/math-1-1/ta_session_2_extrema_concavity.pdf}
+        - {title: {uk: "Сесія 3. Виробничі функції, витрати, похідні експоненти й логарифма, лінійні системи", en: "Session 3. Production functions, costs, exponential and log derivatives, linear systems"}, file: teaching/kse/math-1-1/ta_session_3_production_costs_derivatives.pdf}
+        - {title: {uk: "Сесія 4. Системи лінійних рівнянь, метод Гаусса–Жордана, обернена матриця", en: "Session 4. Linear systems, Gauss–Jordan elimination and the matrix inverse"}, file: teaching/kse/math-1-1/ta_session_4_linear_systems_matrices.pdf}
+
+- path: teaching/kse-math-1-2.html
+  active: teaching.html
+  parent: teaching.html
+  parent_label: {uk: "Викладання", en: "Teaching"}
+  title: {uk: "Математика для економістів 1.2", en: "Mathematics for Economists 1.2"}
+  subtitle: {uk: "Асистент викладача · KSE, MA in Economic Analysis, осінь 2026", en: "Teaching assistant · KSE, MA in Economic Analysis, autumn 2026"}
+  description:
+    uk: |
+      Семінари другого модуля математики KSE, побудовані за підручником Simon and Blume. Векторна алгебра й аналітична
+      геометрія, границі послідовностей і відкриті та замкнені множини в ℝⁿ, функції багатьох змінних,
+      частинні похідні й теорема про неявну функцію, квадратичні форми та їхня знаковизначеність за лінійних
+      обмежень. Теорія, економічні приклади й задачі з розв'язками. Матеріали англійською.
+    en: |
+      Seminars for the second KSE mathematics module, following Simon and Blume. Vector algebra and analytic geometry,
+      limits of sequences and open and closed sets in ℝⁿ, functions of several variables, partial derivatives
+      and the implicit function theorem, quadratic forms and their definiteness under linear constraints. Theory,
+      economic examples and exercises with solutions.
+  groups:
+    - title: {uk: "Семінари", en: "Seminars"}
+      items:
+        - {title: {uk: "Семінар 0. Векторна алгебра та аналітична геометрія", en: "Seminar 0. Vector algebra and analytic geometry"}, file: teaching/kse/math-1-2/seminar_0_vectors_analytic_geometry.pdf}
+        - {title: {uk: "Семінар 1. Границі, послідовності, відкриті й замкнені множини", en: "Seminar 1. Limits, sequences, open and closed sets"}, file: teaching/kse/math-1-2/seminar_1_limits_open_closed_sets.pdf}
+        - {title: {uk: "Семінар 2. Частинні похідні та неявні функції", en: "Seminar 2. Partial derivatives and implicit functions"}, file: teaching/kse/math-1-2/seminar_2_partial_derivatives_implicit_functions.pdf}
+        - {title: {uk: "Семінар 3. Квадратичні форми та лінійні обмеження", en: "Seminar 3. Quadratic forms and linear constraints"}, file: teaching/kse/math-1-2/seminar_3_quadratic_forms_constraints.pdf}
+        - {title: {uk: "Семінар 3, частина 2. Облямований гессіан: розв'язки задач із квадратичними формами за обмежень", en: "Seminar 3, part 2. Bordered Hessian: worked solutions for constrained quadratic forms"}, file: teaching/kse/math-1-2/seminar_3_part2_bordered_hessian_solutions.pdf}
+
+- path: teaching/kse-stats-1-1.html
+  active: teaching.html
+  parent: teaching.html
+  parent_label: {uk: "Викладання", en: "Teaching"}
+  title: {uk: "Статистика та економетрика 1.1", en: "Statistics and Econometrics 1.1"}
+  subtitle: {uk: "Асистент викладача · KSE, MA in Economic Analysis, осінь 2026", en: "Teaching assistant · KSE, MA in Economic Analysis, autumn 2026"}
+  description:
+    uk: |
+      Матеріали до першого модуля статистики KSE. Вибірки та типи змінних, описова статистика, ймовірність і правило
+      Байєса, біноміальний, пуассонівський, експоненційний і нормальний розподіли, перевірка гіпотез для частки,
+      середніх і дисперсій, χ²-тести. Розв'язаний практичний Problem Set на R із вихідним Quarto-файлом,
+      підготовка до мідтерму і фінального іспиту, статистичні таблиці. Матеріали англійською.
+    en: |
+      Materials for the first KSE statistics module. Sampling and types of variables, descriptive statistics,
+      probability and Bayes' rule, the binomial, Poisson, exponential and normal distributions, hypothesis tests for
+      proportions, means and variances, and χ² tests. A worked practice problem set in R with its Quarto source,
+      midterm and final exam preparation, and statistical tables.
+  groups:
+    - title: {uk: "TA-сесії", en: "TA sessions"}
+      items:
+        - {title: {uk: "TA-сесія 1. Ймовірність, комбінаторика, умовна ймовірність, випадкові величини", en: "TA session 1. Probability, counting, conditional probability and random variables"}, file: teaching/kse/stats-1-1/ta_session_1_probability.pdf}
+    - title: {uk: "Практичний Problem Set", en: "Practice problem set"}
+      items:
+        - {title: {uk: "Practice Problem Set 1. Дані, описова статистика, вибірковий дизайн (з розв'язками)", en: "Practice Problem Set 1. Data, summary statistics and sampling design (with solutions)"}, file: teaching/kse/stats-1-1/practice_ps1_parts_a_b_c.pdf}
+        - {title: {uk: "Practice Problem Set 1: вихідний Quarto-файл з кодом R", en: "Practice Problem Set 1: Quarto source with R code"}, file: teaching/kse/stats-1-1/practice_ps1_parts_a_b_c.qmd}
+    - title: {uk: "Підготовка до мідтерму (лекції 1–5)", en: "Midterm preparation (lectures 1–5)"}
+      items:
+        - {title: {uk: "TA-сесія 3. Конспект і задачі з відповідями", en: "TA session 3. Review notes and problems with answers"}, file: teaching/kse/stats-1-1/midterm_preparation_handout.pdf}
+        - {title: {uk: "Підготовка до мідтерму: слайди з задачами", en: "Midterm preparation: practice slides"}, file: teaching/kse/stats-1-1/midterm_preparation_slides.pdf}
+    - title: {uk: "Перевірка гіпотез і фінальний іспит", en: "Hypothesis testing and the final exam"}
+      items:
+        - {title: {uk: "Перевірка гіпотез: частки, середні, дисперсії, χ²-тести (слайди)", en: "Hypothesis testing: proportions, means, variances and χ² tests (slides)"}, file: teaching/kse/stats-1-1/hypothesis_testing_core_tests.pdf}
+        - {title: {uk: "Двовибіркові t-тести: задачі з розв'язками", en: "Two-sample t tests: problems with solutions"}, file: teaching/kse/stats-1-1/two_sample_t_tests_practice.pdf}
+        - {title: {uk: "Підготовка до фінального іспиту: тести і розподіли", en: "Final exam practice: tests and distributions"}, file: teaching/kse/stats-1-1/final_exam_practice_tests.pdf}
+        - {title: {uk: "Статистичні таблиці у форматі іспиту", en: "Statistical tables in the exam format"}, file: teaching/kse/stats-1-1/statistical_tables_2026.pdf}
+
+- path: teaching/kse-stats-1-2.html
+  active: teaching.html
+  parent: teaching.html
+  parent_label: {uk: "Викладання", en: "Teaching"}
+  title: {uk: "Статистика та економетрика 1.2", en: "Statistics and Econometrics 1.2"}
+  subtitle: {uk: "Асистент викладача · KSE, MA in Economic Analysis, осінь 2026", en: "Teaching assistant · KSE, MA in Economic Analysis, autumn 2026"}
+  description:
+    uk: |
+      Матеріали до другого модуля, присвяченого лінійній регресії. Виведення оцінки МНК у матричній формі, припущення
+      Гаусса–Маркова і властивість BLUE, гетероскедастичність і зсув через пропущені змінні, перевірка гіпотез про
+      коефіцієнти множинної регресії. Збірник задач до мідтерму містить 25 задач, 20 концептуальних питань і 20
+      тверджень «правда чи хибність» з повними розв'язками. Матеріали англійською.
+    en: |
+      Materials for the second module on linear regression. Deriving OLS in matrix form, the Gauss–Markov assumptions
+      and the BLUE property, heteroskedasticity and omitted variable bias, and inference on multiple regression
+      coefficients. The midterm problem book has 25 problems, 20 conceptual questions and 20 true/false statements,
+      all with full solutions.
+  groups:
+    - title: {uk: "Матеріали", en: "Materials"}
+      items:
+        - {title: {uk: "TA-сесії 1–2. МНК, Гаусс–Марков і статистичні висновки в регресії (слайди)", en: "TA sessions 1–2. OLS, Gauss–Markov and regression inference (slides)"}, file: teaching/kse/stats-1-2/ta_sessions_1_2_ols_gauss_markov_inference.pdf}
+        - {title: {uk: "Припущення Гаусса–Маркова, BLUE, гетероскедастичність і зсув: детальне виведення", en: "Gauss–Markov assumptions, BLUE, heteroskedasticity and bias: a detailed derivation"}, file: teaching/kse/stats-1-2/gauss_markov_blue_derivation.pdf}
+        - {title: {uk: "Збірник задач до мідтерму: множинна регресія (з розв'язками)", en: "Midterm problem book: multiple regression (with solutions)"}, file: teaching/kse/stats-1-2/midterm_problem_book_multiple_regression.pdf}
+
+- path: club/research-workshop.html
+  active: club.html
+  parent: club.html
+  parent_label: {uk: "Макрофінансовий клуб", en: "Macro and Finance Club"}
+  title: {uk: "Research workshop: як провести економетричне дослідження", en: "Research workshop: how to run an econometric study"}
+  subtitle: {uk: "Макроекономічний та фінансовий клуб ОНЕУ спільно з ФЕУП, жовтень 2026", en: "ONEU Macroeconomics and Finance Club with FEUP, October 2026"}
+  description:
+    uk: |
+      Практичний воркшоп, на якому чотири студентські команди проходять повний цикл емпіричного дослідження на
+      власних темах: інфляція і реальні доходи, міграція, банківське кредитування, соціальні мережі та успішність.
+      Кожен етап складається з короткого прикладу, командної роботи і розбору research design. За воркшоп команди
+      формулюють питання і механізм, будують матрицю літератури та research gap, шукають і перевіряють дані,
+      обирають функціональну форму, оцінюють базову модель з контрольними змінними, перевіряють загрози
+      інтерпретації та стійкість результатів і захищають проєкт одним слайдом. Наскрізний навчальний приклад
+      пов'язує дохід країни з тривалістю життя (Gapminder, 142 країни). Банківські дані в Excel-файлі симульовані
+      для тренування методів.
+    en: |
+      A hands-on workshop in which four student teams take their own topics through a full empirical research cycle:
+      inflation and real incomes, migration, bank lending, and social media and academic performance. Each stage has
+      a short example, team work and a review of the research design. Over the workshop teams formulate a question and
+      a mechanism, build a literature matrix and identify a research gap, find and audit data, choose a functional
+      form, estimate a baseline model with controls, check threats to interpretation and robustness, and defend the
+      project on one slide. The running example links country income to life expectancy (Gapminder, 142 countries).
+      The bank data in the Excel file are simulated for practising the methods. Materials are in Ukrainian.
+  groups:
+    - title: {uk: "Матеріали воркшопу", en: "Workshop materials"}
+      items:
+        - {title: {uk: "Слайди воркшопу: від ідеї до готової роботи", en: "Workshop slides: from an idea to a finished paper (Ukrainian)"}, file: club/research-workshop/research_workshop_slides.pdf}
+        - {title: {uk: "Додаток. Функціональні форми, банківське кредитування, регресія та ANOVA", en: "Appendix. Functional forms, bank lending, regression and ANOVA (Ukrainian)"}, file: club/research-workshop/appendix_functional_forms_regression_anova.pdf}
+        - {title: {uk: "Дані та розрахунки: Gapminder, симульована банківська панель, регресії й ANOVA на формулах", en: "Data and calculations: Gapminder, a simulated bank panel, regressions and ANOVA in formulas"}, file: club/research-workshop/research_workshop_data.xlsx}
+    - title: {uk: "Приклад дослідження", en: "Example study"}
+      items:
+        - {title: {uk: "Моделювання зв'язків між економічними показниками: валютний курс, інфляція, ВВП і облікова ставка (тест Грейнджера, VAR, ARIMA, QPM)", en: "Modelling links between economic indicators: exchange rate, inflation, GDP and the policy rate (Granger, VAR, ARIMA, QPM) (Ukrainian)"}, file: club/research-workshop/example_modelling_macro_indicators.pdf}
+
 - path: club/intro-economics.html
   active: club.html
   parent: club.html

@@ -14,7 +14,7 @@ cv_file: cv/Havryliuk_CV_en.pdf
 about:
   uk: |
     Магістрант Київської школи економіки (Economic Analysis) та Одеського національного економічного університету
-    (Banking Management in Financial Markets). Провідний аналітик кредитних ризиків АТ «ВСТ БАНК», асистент-дослідник KSE,
+    (Banking Management in Financial Markets). Провідний аналітик кредитних ризиків АТ «ВСТ БАНК», асистент-дослідник і асистент викладача KSE,
     голова Макроекономічного та фінансового клубу ОНЕУ.
 
     Досліджую, як працює банківське посередництво в умовах війни: скільки насправді коштує банкам ресурс, як швидко
@@ -27,7 +27,7 @@ about:
     результати досліджень відкрито викладені на цьому сайті.
   en: |
     MA student at the Kyiv School of Economics (Economic Analysis) and Odesa National Economic University (Banking
-    Management in Financial Markets). Lead credit risk analyst at VST BANK, research assistant at KSE and head of the
+    Management in Financial Markets). Lead credit risk analyst at VST BANK, research and teaching assistant at KSE and head of the
     ONEU Macroeconomics and Finance Club.
 
     I study how banking intermediation works in wartime: what funding really costs banks, how fast their balance sheets
@@ -78,6 +78,11 @@ experience:
     role: {uk: "Асистент-дослідник", en: "Research assistant"}
     dates: {uk: "2026 – дотепер", en: "2026 – present"}
     note: {uk: "Дані, емпіричний аналіз, навчальні та дослідницькі матеріали (R, Python).", en: "Data, empirical analysis, teaching and research materials (R, Python)."}
+  - org: {uk: "Київська школа економіки", en: "Kyiv School of Economics"}
+    place: {uk: "Київ", en: "Kyiv"}
+    role: {uk: "Асистент викладача, MA in Economic Analysis", en: "Teaching assistant, MA in Economic Analysis"}
+    dates: {uk: "2026 – дотепер", en: "2026 – present"}
+    note: {uk: "Математика для економістів 1.1 і 1.2, статистика та економетрика 1.1 і 1.2: TA-сесії, практичні Problem Sets, підготовка до мідтермів та іспитів.", en: "Mathematics for Economists 1.1 and 1.2, Statistics and Econometrics 1.1 and 1.2: TA sessions, practice problem sets, midterm and exam preparation."}
   - org: {uk: "Національний банк України", en: "National Bank of Ukraine"}
     place: {uk: "Київ", en: "Kyiv"}
     role: {uk: "Стажер, Департамент фінансової стабільності; Департамент стратегії та розвитку", en: "Intern, Financial Stability Department; Strategy and Development Department"}

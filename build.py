@@ -101,7 +101,7 @@ def human_size(n, lang):
 
 def fmt_of(path):
     ext = Path(path).suffix.lower().lstrip(".")
-    return {"xlsx": "XLSX", "pdf": "PDF", "zip": "ZIP", "csv": "CSV", "docx": "DOCX", "r": "R", "py": "Python", "parquet": "Parquet", "json": "JSON"}.get(ext, ext.upper())
+    return {"xlsx": "XLSX", "pdf": "PDF", "zip": "ZIP", "csv": "CSV", "docx": "DOCX", "r": "R", "py": "Python", "parquet": "Parquet", "json": "JSON", "qmd": "Quarto"}.get(ext, ext.upper())
 
 
 class Ctx:

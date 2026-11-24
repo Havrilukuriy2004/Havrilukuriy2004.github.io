@@ -1,7 +1,31 @@
 intro:
-  uk: "Курси, які я викладаю в ОНЕУ та у Фінансовому клубі: лекції, завдання, кейси, дані й Excel-моделі для вільного завантаження."
-  en: "Courses I teach at ONEU and in the Finance Club: lectures, assignments, cases, data and Excel models, free to download."
+  uk: "Курси, які я викладаю в ОНЕУ та у Фінансовому клубі, і матеріали TA-сесій у Київській школі економіки: лекції, семінари, завдання з розв'язками, кейси, дані й Excel-моделі для вільного завантаження."
+  en: "Courses I teach at ONEU and in the Finance Club, and my TA session materials at the Kyiv School of Economics: lectures, seminars, problems with solutions, cases, data and Excel models, free to download."
 courses:
+  - title: {uk: "Математика для економістів 1.1", en: "Mathematics for Economists 1.1"}
+    where: {uk: "KSE, MA in Economic Analysis, осінь 2026 · асистент викладача", en: "KSE, MA in Economic Analysis, autumn 2026 · teaching assistant"}
+    page: teaching/kse-math-1-1.html
+    summary:
+      uk: "Функції та графіки, екстремуми й опуклість, еластичність, виробничі функції й витрати, лінійні системи. Чотири TA-сесії з розв'язками."
+      en: "Functions and graphs, extrema and concavity, elasticity, production and cost functions, linear systems. Four TA sessions with solutions."
+  - title: {uk: "Математика для економістів 1.2", en: "Mathematics for Economists 1.2"}
+    where: {uk: "KSE, MA in Economic Analysis, осінь 2026 · асистент викладача", en: "KSE, MA in Economic Analysis, autumn 2026 · teaching assistant"}
+    page: teaching/kse-math-1-2.html
+    summary:
+      uk: "Вектори, границі й топологія ℝⁿ, частинні похідні й неявні функції, квадратичні форми з обмеженнями. Чотири семінари з розв'язками."
+      en: "Vectors, limits and the topology of ℝⁿ, partial derivatives and implicit functions, constrained quadratic forms. Four seminars with solutions."
+  - title: {uk: "Статистика та економетрика 1.1", en: "Statistics and Econometrics 1.1"}
+    where: {uk: "KSE, MA in Economic Analysis, осінь 2026 · асистент викладача", en: "KSE, MA in Economic Analysis, autumn 2026 · teaching assistant"}
+    page: teaching/kse-stats-1-1.html
+    summary:
+      uk: "Ймовірність, описова статистика, розподіли, перевірка гіпотез. TA-сесії, розв'язаний Problem Set на R, підготовка до мідтерму й іспиту, таблиці."
+      en: "Probability, descriptive statistics, distributions, hypothesis testing. TA sessions, a worked problem set in R, midterm and exam preparation, tables."
+  - title: {uk: "Статистика та економетрика 1.2", en: "Statistics and Econometrics 1.2"}
+    where: {uk: "KSE, MA in Economic Analysis, осінь 2026 · асистент викладача", en: "KSE, MA in Economic Analysis, autumn 2026 · teaching assistant"}
+    page: teaching/kse-stats-1-2.html
+    summary:
+      uk: "МНК у матричній формі, припущення Гаусса–Маркова, BLUE, статистичні висновки в регресії та збірник задач до мідтерму."
+      en: "OLS in matrix form, the Gauss–Markov assumptions, BLUE, regression inference and a midterm problem book."
   - title: {uk: "Банківська справа", en: "Banking"}
     where: {uk: "ОНЕУ, бакалаврат, весна 2026", en: "ONEU, undergraduate, spring 2026"}
     page: teaching/banking.html

@@ -1,0 +1,744 @@
+---
+title: "Statistics and Econometrics 1.1"
+subtitle: "Practice Problem Set 1 - part A and B"
+author: "Yura Havryliuk, MA in Economic Analysis"
+date: "Fall 2026"
+format:
+  pdf:
+    documentclass: article
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    keep-tex: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+\clearpage
+
+For this worked practice version use
+
+$$a=7,\qquad b=4,\qquad S=20260924.$$
+
+Hence your sample size is
+
+$$n=500+20a=640,$$
+
+your personal colour is **D**, and your personal cut is **Ideal**.
+
+Use the first random sample, `my_sample`, in all tasks unless a task explicitly asks for `my_sample2`.
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(knitr)
+
+# Personal parameters
+a <- 7
+b <- 4
+S <- 20260924
+n <- 500 + 20 * a
+
+colour_key <- c("D", "E", "F", "G", "H", "I", "J", "D", "E", "F")
+cut_key <- c("Fair", "Good", "Very Good", "Premium", "Ideal",
+             "Fair", "Good", "Very Good", "Premium", "Ideal")
+
+my_colour <- colour_key[a + 1]
+my_cut <- cut_key[b + 1]
+
+set.seed(S)
+my_sample <- slice_sample(diamonds, n = n)
+
+set.seed(S + 1)
+my_sample2 <- slice_sample(diamonds, n = n)
+```
+
+\newpage
+
+# Problem set
+
+## Part A. Data and summary statistics \[52 points\]
+
+### A.1 Reproducible simple random samples \[10 points\]
+
+Set the seed and draw a sample of size $n=500+20a$ from `diamonds` without replacement:
+
+``` r
+set.seed(S)
+my_sample <- slice_sample(diamonds, n = 500 + 20 * a)
+```
+
+1.  Report $n$.
+2.  Report the number and share of diamonds in each cut category in `my_sample`.
+3.  Compute the share of Ideal diamonds in the **full** `diamonds` dataset. Which Ideal share is a parameter and which is a statistic? Explain using the population/sample distinction.
+4.  Draw a second sample of the same size using `set.seed(S + 1)` and call it `my_sample2`. Report its Ideal share. Why is it different from the first sample share?
+5.  For each sample, compute the absolute difference between its Ideal share and the full-dataset Ideal share. Which sample happens to be closer in this draw? Why does that **not** imply that its seed or sampling procedure is better?
+
+### A.2 Types of variables \[6 points\]
+
+For each of `cut`, `price`, `carat`, `color`, and `clarity`:
+
+1.  classify the variable as numerical or categorical;
+2.  if numerical, state whether it is discrete or continuous **as recorded in this dataset**;
+3.  if categorical, state whether it is ordinal or non-ordinal;
+4.  state for which variables a mean is a meaningful summary.
+
+Finally, explain why replacing the ordered cut levels Fair, Good, Very Good, Premium, Ideal by 1, 2, 3, 4, 5 and reporting the mean cut is misleading, even though the order itself is meaningful.
+
+### A.3 Your colour and cut \[12 points\]
+
+Using diamonds of **your colour** in the full `diamonds` dataset, calculate the following for `price`:
+
+- number of observations;
+- mean;
+- median;
+- sample standard deviation;
+- Q1;
+- Q3;
+- IQR;
+- minimum;
+- maximum.
+
+Compute these summaries for:
+
+1.  all diamonds of your colour;
+2.  diamonds of your colour and your cut only.
+
+Present both rows in one table.
+
+Then answer:
+
+1.  In which row is the mean further from the median in dollar terms? What do the **sign** and **size** of the mean-minus-median gap suggest about the shape of the distribution?
+2.  Compare IQR with standard deviation in each row. Also compare $\text{IQR}/s$ with the normal-distribution benchmark of approximately 1.35. What does this comparison suggest?
+3.  Which group has more variable prices? Answer once using IQR and once using standard deviation. Do the two measures agree here? Explain what part of the data each measure uses.
+
+### A.4 Figures and boxplot logic \[10 points\]
+
+1.  Draw a histogram of `price` for diamonds of your colour in the full dataset using `binwidth = 250`. Show only the range from 0 to 10,000 dollars using `coord_cartesian()`. Describe skewness and modality. State where the mean and median from A.3 lie relative to the main peak.
+2.  Draw a boxplot of `price` by `cut` for diamonds of your colour, over the same displayed price range.
+3.  Compute IQR by cut and identify the cut with the widest box. Confirm that the boxplot and the numerical IQR agree.
+4.  For every cut, count how many prices are drawn as boxplot outliers under the standard 1.5-IQR rule. Explain exactly how the lower fence, upper fence, whiskers, and individual outlier points are determined.
+5.  Does the cut with the largest IQR also have the largest standard deviation? Compute the standard deviation by cut and answer from the numbers.
+
+Export the two figures with `ggsave()`.
+
+### A.5 Order-dependent convenience samples \[7 points\]
+
+Compute the mean price for each of the following:
+
+1.  the first $n$ rows of `diamonds`;
+2.  the consecutive block of $n$ rows beginning at row 25,001;
+3.  `my_sample`;
+4.  all diamonds.
+
+Also report the minimum and maximum price in the two consecutive blocks.
+
+Explain why the first two are not simple random samples. Based on their observed price ranges, describe the direction of the bias in each block as an estimate of the full-dataset mean. Why is taking a contiguous block from a data file dangerous when the file has an informative ordering?
+
+### A.6 Impossible measurements \[7 points\]
+
+In the full dataset:
+
+1.  count how many diamonds have at least one of `x`, `y`, or `z` equal to zero;
+2.  separately count zeros in `x`, `y`, and `z`;
+3.  explain what a zero means in this context and why it is not a plausible physical measurement;
+4.  compute the mean of `price`, and the mean, minimum, and median of `z`, both with and without the problematic rows;
+5.  identify which statistics change noticeably and which barely change. Explain this from the way each statistic is computed and from the small fraction of problematic rows.
+
+## Part B. By hand \[21 points\]
+
+Twelve students reported the number of hours they spent on their last problem set:
+
+$$2,\ 3,\ 4,\ 4,\ 5,\ 5,\ 6,\ 7,\ 8,\ 9,\ 3+a,\ 13+b.$$
+
+For this practice version, $a=7$ and $b=4$.
+
+### B.1 Summary statistics by hand \[12 points\]
+
+Without R:
+
+1.  substitute $a$ and $b$, then sort the data;
+2.  compute the sum and mean;
+3.  compute the median;
+4.  report the mode or modes;
+5.  compute the **sample variance**, showing every squared deviation, the sum of squared deviations, and the denominator;
+6.  compute the sample standard deviation;
+7.  compute Q1 and Q3 using the median of the lower six and upper six observations;
+8.  compute the IQR.
+
+### B.2 Outliers and hand-drawn boxplot \[5 points\]
+
+Using your quartiles from B.1:
+
+1.  compute the lower and upper 1.5-IQR fences;
+2.  identify any outliers;
+3.  identify the two whisker endpoints;
+4.  draw the boxplot by hand, with the box, median line, whiskers, and outliers.
+
+### B.3 Check in R \[4 points\]
+
+Enter the twelve values in R and compute:
+
+``` r
+mean(x)
+median(x)
+var(x)
+sd(x)
+quantile(x, c(0.25, 0.75))
+fivenum(x)
+```
+
+Which R function reproduces the hand-defined Q1 and Q3 from B.1? Show the numerical difference. Explain in one sentence why the other function can give a different quartile even when both are legitimate conventions.
+
+## Part C. Sampling variation and sampling design \[27 points\]
+
+### C.1 Two samples, three statistics \[9 points\]
+
+For `my_sample` and `my_sample2`, compute:
+
+- mean price;
+- median price;
+- Ideal share.
+
+Compute the corresponding three parameters in the full dataset. For every statistic, calculate the signed error `sample statistic - population parameter` and the absolute error.
+
+1.  Which sample is closer for the mean price?
+2.  Which sample is closer for the median price?
+3.  Which sample is closer for the Ideal share?
+4.  Explain why it is perfectly possible for one random sample to be closer for one statistic and further away for another.
+5.  If both samples were generated correctly, is either sample "wrong"? Distinguish random sampling variation from a data-processing mistake.
+
+### C.2 Sampling design \[18 points\]
+
+KSE wants to estimate the average number of hours its MA students spend on coursework per week. Consider four proposals:
+
+1.  post a poll in the MA Telegram channel that anyone may answer;
+2.  ask the first 40 students entering the main building on Monday at 8:30;
+3.  e-mail all MA students once, with about one quarter replying;
+4.  survey every student in one compulsory first-year MA class and use that class as if it represented all MA students.
+
+For **each** proposal:
+
+- name the main sampling problem using Lecture 1 terminology;
+- give a plausible direction of bias;
+- state the assumption about the students who enter the sample that produces your predicted direction;
+- explain why the direction is not automatic if the assumption changes.
+
+Then propose a better procedure requiring roughly the same level of effort. Your procedure should identify the sampling frame, explain how students are selected, and include a practical step for reducing nonresponse.
+
+\newpage
+
+# Solutions
+
+## Solution A.1 - Reproducible simple random samples
+
+The sample size is
+
+$$n=500+20(7)=640.$$
+
+```{r}
+#| label: a1-cut-table
+cut_table_1 <- my_sample |>
+  count(cut) |>
+  mutate(share = n / sum(n))
+
+cut_table_1
+```
+
+For the specified seed, the first sample contains:
+
+| Cut       | Count |    Share |
+|-----------|------:|---------:|
+| Fair      |    16 | 0.025000 |
+| Good      |    69 | 0.107813 |
+| Very Good |   138 | 0.215625 |
+| Premium   |   170 | 0.265625 |
+| Ideal     |   247 | 0.385938 |
+
+Thus the first-sample Ideal share is
+
+$$\hat p_1=\frac{247}{640}=0.3859375\approx 38.59\%.$$
+
+```{r}
+#| label: a1-pop-ideal
+p_ideal <- diamonds |>
+  summarise(share = mean(cut == "Ideal")) |>
+  pull(share)
+
+p_ideal
+```
+
+The full-dataset Ideal share is
+
+$$p=0.3995365\approx 39.95\%.$$
+
+This is a **parameter** because it describes the entire population being studied here: all 53,940 rows of the `diamonds` dataset. The 38.59% from `my_sample` is a **statistic** because it is calculated from only the 640 sampled observations.
+
+```{r}
+#| label: a1-second-sample
+ideal_1 <- mean(my_sample$cut == "Ideal")
+ideal_2 <- mean(my_sample2$cut == "Ideal")
+
+c(sample1 = ideal_1, sample2 = ideal_2, population = p_ideal)
+```
+
+For the second sample,
+
+$$\hat p_2=0.3953125=39.53\%.$$
+
+The two sample shares differ because a random sample is a random subset of the population. Changing the seed changes the selected rows. Correct random samples therefore need not produce identical statistics.
+
+Their absolute errors are
+
+$$|\hat p_1-p|=|0.3859375-0.3995365|=0.0135990,$$
+
+$$|\hat p_2-p|=|0.3953125-0.3995365|=0.0042240.$$
+
+So Sample 2 happens to be closer for the Ideal share in this realization. That is an outcome of sampling variation, not evidence that seed $S+1$ is "better." A seed is only a reproducibility device; it does not improve the statistical design.
+
+## Solution A.2 - Types of variables
+
+| Variable | Type | Mean meaningful? | Reason |
+|------------------|------------------|------------------|------------------|
+| `cut` | Categorical, ordinal | No | Fair through Ideal have a ranking, but no quantitative unit separates adjacent grades. |
+| `price` | Numerical, discrete as recorded | Yes | Prices are stored in whole dollars, so arithmetic differences and averages are meaningful. |
+| `carat` | Numerical, continuous | Yes | Carat is a measured quantity, recorded to finite precision. |
+| `color` | Categorical, ordinal | No | D through J represent ordered quality grades rather than equally spaced numerical measurements. |
+| `clarity` | Categorical, ordinal | No | Clarity grades have an order but no justified equal numerical spacing. |
+
+Coding Fair, Good, Very Good, Premium, Ideal as 1 through 5 preserves **order** but invents **distance**. A mean such as 3.8 would treat the difference between Fair and Good as exactly the same as the difference between Premium and Ideal. The grading system does not provide that interval-scale interpretation, so the numerical mean would be arbitrary and dependent on the chosen coding.
+
+## Solution A.3 - Your colour and cut
+
+Here, `my_colour = "D"` and `my_cut = "Ideal"`.
+
+```{r}
+#| label: a3-summary
+colour_data <- diamonds |>
+  filter(color == my_colour)
+
+summary_price <- function(data) {
+  data |>
+    summarise(
+      n = n(),
+      mean = mean(price),
+      median = median(price),
+      sd = sd(price),
+      Q1 = quantile(price, 0.25),
+      Q3 = quantile(price, 0.75),
+      IQR = IQR(price),
+      min = min(price),
+      max = max(price)
+    )
+}
+
+bind_rows(
+  summary_price(colour_data) |> mutate(group = "D: all cuts"),
+  summary_price(filter(colour_data, cut == my_cut)) |> mutate(group = "D: Ideal only")
+) |>
+  select(group, everything())
+```
+
+| Group         |     n |     Mean | Median |       SD |     Q1 |       Q3 |      IQR | Min |    Max |
+|--------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
+| D, all cuts   | 6,775 | 3,169.95 |  1,838 | 3,356.59 | 911.00 | 4,213.50 | 3,302.50 | 357 | 18,693 |
+| D, Ideal only | 2,834 | 2,629.09 |  1,576 | 3,001.07 | 854.25 | 3,102.00 | 2,247.75 | 367 | 18,693 |
+
+### Mean-median gap
+
+For all D-colour diamonds,
+
+$$\bar x-\tilde x=3169.95-1838=1331.95.$$
+
+For D-colour Ideal diamonds,
+
+$$\bar x-\tilde x=2629.09-1576=1053.09.$$
+
+The gap is larger for **all D-colour diamonds**. Both gaps are positive and large, meaning the mean is pulled well above the median. This is consistent with a long right tail of expensive diamonds.
+
+### IQR versus standard deviation
+
+For all D-colour diamonds,
+
+$$\frac{IQR}{s}=\frac{3302.50}{3356.59}\approx 0.984.$$
+
+For D-colour Ideal diamonds,
+
+$$\frac{IQR}{s}=\frac{2247.75}{3001.07}\approx 0.749.$$
+
+Both ratios are below the normal-distribution benchmark of about 1.35. This is unsurprising because price is strongly right-skewed. Standard deviation uses the squared distance of **every** observation from the mean and is strongly affected by the long upper tail. IQR uses only Q1 and Q3 and therefore describes the width of the middle 50%.
+
+### Which group is more variable?
+
+By IQR, all D-colour diamonds are more variable: $3302.50>2247.75$. By standard deviation they are also more variable: $3356.59>3001.07$. Thus the two measures agree on the ranking in this comparison, although they quantify different aspects of spread.
+
+## Solution A.4 - Figures and boxplot logic
+
+```{r}
+#| label: a4-hist
+#| fig-cap: "Histogram of price for D-colour diamonds."
+p_hist <- colour_data |>
+  ggplot(aes(x = price)) +
+  geom_histogram(binwidth = 250) +
+  coord_cartesian(xlim = c(0, 10000)) +
+  labs(x = "Price (USD)", y = "Count") +
+  theme_minimal()
+
+p_hist
+
+ggsave("hist_D_price.png", p_hist, width = 8, height = 4.8, dpi = 300)
+```
+
+The histogram has a very large concentration below about \$1,000 and a long right tail. It is therefore strongly right-skewed and not well described by a symmetric single-peaked shape; there are also smaller local concentrations at higher prices. With \$250 bins beginning at 0, the largest bin is roughly \$500-\$750. The median of \$1,838 lies to the right of this main peak, and the mean of about \$3,170 lies much further right because high prices pull the mean upward.
+
+```{r}
+#| label: a4-box
+#| fig-cap: "Price by cut for D-colour diamonds."
+p_box <- colour_data |>
+  ggplot(aes(x = cut, y = price)) +
+  geom_boxplot() +
+  coord_cartesian(ylim = c(0, 10000)) +
+  labs(x = "Cut", y = "Price (USD)") +
+  theme_minimal()
+
+p_box
+
+ggsave("box_D_price_by_cut.png", p_box, width = 8, height = 4.8, dpi = 300)
+```
+
+The numerical check is:
+
+```{r}
+#| label: a4-cut-spread
+spread_by_cut <- colour_data |>
+  group_by(cut) |>
+  summarise(
+    n = n(),
+    Q1 = quantile(price, 0.25),
+    Q3 = quantile(price, 0.75),
+    IQR = IQR(price),
+    SD = sd(price),
+    lower_fence = Q1 - 1.5 * IQR,
+    upper_fence = Q3 + 1.5 * IQR,
+    outliers = sum(price < lower_fence | price > upper_fence),
+    .groups = "drop"
+  )
+
+spread_by_cut
+```
+
+| Cut       |     n |          IQR |           SD | Lower fence | Upper fence | Outliers |
+|-----------|----------:|----------:|----------:|----------:|----------:|----------:|
+| Fair      |   163 |     2,592.50 |     3,286.11 |   -1,684.25 |    8,685.75 |       16 |
+| Good      |   662 |     3,623.75 |     3,175.15 |   -4,478.38 |   10,016.63 |       27 |
+| Very Good | 1,513 |     3,783.00 |     3,523.75 |   -4,824.50 |   10,307.50 |       96 |
+| Premium   | 1,603 | **3,957.00** | **3,711.63** |   -4,977.50 |   10,850.50 |      104 |
+| Ideal     | 2,834 |     2,247.75 |     3,001.07 |   -2,517.38 |    6,473.63 |      244 |
+
+The **Premium** group has the widest box because its IQR is the largest, \$3,957. It also has the largest standard deviation in this case.
+
+For a group with quartiles $Q_1$ and $Q_3$, first compute
+
+$$IQR=Q_3-Q_1,$$
+
+$$L=Q_1-1.5IQR,\qquad U=Q_3+1.5IQR.$$
+
+Any observation below $L$ or above $U$ is drawn as an individual outlier point. The whisker itself does **not** necessarily end at the fence. It ends at the most extreme actual observation that is still within the relevant fence. Therefore the boxplot uses the middle 50% for the box, the median for the center line, non-outlying extreme observations for whiskers, and observations outside the fences as separate points.
+
+## Solution A.5 - Order-dependent convenience samples
+
+```{r}
+#| label: a5-convenience
+first_block <- slice_head(diamonds, n = n)
+mid_block <- slice(diamonds, 25001:(25000 + n))
+
+comparison <- tibble(
+  sample = c("First n rows", "Rows 25,001 onward", "Random sample", "Full data"),
+  mean_price = c(
+    mean(first_block$price),
+    mean(mid_block$price),
+    mean(my_sample$price),
+    mean(diamonds$price)
+  )
+)
+
+comparison
+```
+
+The mean prices are:
+
+| Data used          | Mean price |
+|--------------------|-----------:|
+| First 640 rows     |   2,364.50 |
+| Rows 25,001-25,640 |  12,762.68 |
+| Random sample      |   4,002.64 |
+| Full dataset       |   3,932.80 |
+
+The first block ranges from \$326 to \$2,842. The block beginning at row 25,001 ranges from \$640 to \$14,527.
+
+These blocks are **convenience/order-dependent samples**, not probability samples. The first block severely underestimates the population mean because the beginning of the file contains many low-price observations. The block around row 25,001 strongly overestimates it because that part of the file contains many high-price observations. The random sample is much closer to the full mean in this draw.
+
+The key lesson is that row order may encode information. Taking a convenient contiguous block can therefore select a systematically unusual region of the data rather than a representative cross-section.
+
+## Solution A.6 - Impossible measurements
+
+```{r}
+#| label: a6-bad-dimensions
+bad_dim <- diamonds |>
+  filter(x == 0 | y == 0 | z == 0)
+
+good_dim <- diamonds |>
+  filter(x > 0, y > 0, z > 0)
+
+nrow(bad_dim)
+summarise(diamonds,
+          zero_x = sum(x == 0),
+          zero_y = sum(y == 0),
+          zero_z = sum(z == 0))
+```
+
+There are **20** diamonds with at least one zero dimension. The separate counts are:
+
+$$\#(x=0)=8,\qquad \#(y=0)=7,\qquad \#(z=0)=20.$$
+
+A physical diamond cannot have zero length, width, or depth while simultaneously having positive carat and price. These zeros therefore indicate missing, miscoded, or otherwise invalid dimension measurements rather than genuine zero-sized diamonds.
+
+```{r}
+#| label: a6-comparison
+bind_rows(
+  diamonds |> summarise(group = "All rows",
+                         mean_price = mean(price),
+                         mean_z = mean(z),
+                         min_z = min(z),
+                         median_z = median(z)),
+  good_dim |> summarise(group = "Remove zero-dimension rows",
+                         mean_price = mean(price),
+                         mean_z = mean(z),
+                         min_z = min(z),
+                         median_z = median(z))
+)
+```
+
+| Data                        | Mean price | Mean z | Min z | Median z |
+|-----------------------------|-----------:|-------:|------:|---------:|
+| All rows                    |   3,932.80 | 3.5387 |  0.00 |     3.53 |
+| Zero-dimension rows removed |   3,930.99 | 3.5400 |  1.07 |     3.53 |
+
+The **minimum of z** changes dramatically because a minimum depends on a single most extreme value: removing all zeros immediately moves it from 0 to 1.07. The mean of z changes only slightly because 20 rows are a tiny fraction of 53,940 observations. The median does not change at the shown precision because deleting a few extreme low values does not move the middle of such a large ordered dataset. Mean price also barely changes because the problematic dimension rows are few relative to the full dataset and their prices do not dominate the total price sum.
+
+## Solution B.1 - Summary statistics by hand
+
+Substitute $a=7$ and $b=4$:
+
+$$3+a=10,\qquad 13+b=17.$$
+
+The sorted data are
+
+$$2,3,4,4,5,5,6,7,8,9,10,17.$$
+
+There are $n=12$ observations and
+
+$$\sum x_i=80.$$
+
+Therefore
+
+$$\bar x=\frac{80}{12}=\frac{20}{3}\approx 6.6667.$$
+
+Because $n=12$, the median is the average of the 6th and 7th observations:
+
+$$\tilde x=\frac{5+6}{2}=5.5.$$
+
+The values 4 and 5 each occur twice, more often than any other value, so the data are **bimodal** with modes 4 and 5.
+
+### Sample variance
+
+Using $\bar x=20/3$:
+
+$$\begin{aligned}
+\sum (x_i-\bar x)^2
+&=\left(2-\frac{20}{3}\right)^2
++\left(3-\frac{20}{3}\right)^2
++2\left(4-\frac{20}{3}\right)^2 \\
+&\quad +2\left(5-\frac{20}{3}\right)^2
++\left(6-\frac{20}{3}\right)^2
++\left(7-\frac{20}{3}\right)^2 \\
+&\quad +\left(8-\frac{20}{3}\right)^2
++\left(9-\frac{20}{3}\right)^2
++\left(10-\frac{20}{3}\right)^2
++\left(17-\frac{20}{3}\right)^2.
+\end{aligned}$$
+
+Writing the terms over a common denominator:
+
+$$\frac{196+121+2(64)+2(25)+4+1+16+49+100+961}{9}
+=\frac{1626}{9}
+=180.6667.$$
+
+The **sample** variance uses denominator $n-1=11$:
+
+$$s^2=\frac{180.6667}{11}=16.4242.$$
+
+Hence
+
+$$s=\sqrt{16.4242}=4.0527.$$
+
+### Quartiles
+
+The lower half is
+
+$$2,3,4,4,5,5,$$
+
+so
+
+$$Q_1=\frac{4+4}{2}=4.$$
+
+The upper half is
+
+$$6,7,8,9,10,17,$$
+
+so
+
+$$Q_3=\frac{8+9}{2}=8.5.$$
+
+Therefore
+
+$$IQR=8.5-4=4.5.$$
+
+The complete hand-calculated answer is thus:
+
+$$\boxed{\bar x=6.6667,\ \tilde x=5.5,\ \text{modes}=4,5,\ s^2=16.4242,\ s=4.0527,\ Q_1=4,\ Q_3=8.5,\ IQR=4.5.}$$
+
+## Solution B.2 - Outliers and boxplot
+
+The fences are
+
+$$L=Q_1-1.5IQR=4-1.5(4.5)=-2.75,$$
+
+$$U=Q_3+1.5IQR=8.5+1.5(4.5)=15.25.$$
+
+Only 17 lies outside the fences, so 17 is an outlier. The lower whisker goes to 2, the smallest non-outlier. The upper whisker goes to 10, the largest non-outlier. The box runs from 4 to 8.5 and the median line is at 5.5. The value 17 is drawn separately as a point.
+
+A correct hand sketch therefore has:
+
+- lower whisker: 2;
+- left/lower box edge: 4;
+- median: 5.5;
+- right/upper box edge: 8.5;
+- upper whisker: 10;
+- one outlier point: 17.
+
+## Solution B.3 - Check in R
+
+```{r}
+#| label: b3-check
+x <- c(2, 3, 4, 4, 5, 5, 6, 7, 8, 9, 3 + a, 13 + b)
+
+mean(x)
+median(x)
+var(x)
+sd(x)
+quantile(x, c(0.25, 0.75))
+fivenum(x)
+```
+
+R gives approximately
+
+$$\bar x=6.6667,\qquad \tilde x=5.5,\qquad s^2=16.4242,\qquad s=4.0527.$$
+
+For the quartiles:
+
+- `fivenum(x)` gives lower hinge $4$ and upper hinge $8.5$, matching the median-of-halves rule used in B.1;
+- `quantile(x, c(.25,.75))` with R's default type 7 gives $Q_1=4$ and $Q_3=8.25$.
+
+The difference arises because quartiles are not defined by a single universal finite-sample convention. `quantile()` interpolates between order statistics under its default type-7 rule, whereas `fivenum()` uses Tukey-style hinges, which match the hand rule here.
+
+## Solution C.1 - Two samples, three statistics
+
+```{r}
+#| label: c1-sampling-variation
+population <- tibble(
+  mean_price = mean(diamonds$price),
+  median_price = median(diamonds$price),
+  ideal_share = mean(diamonds$cut == "Ideal")
+)
+
+sample_stats <- bind_rows(
+  my_sample |>
+    summarise(sample = "Sample 1",
+              mean_price = mean(price),
+              median_price = median(price),
+              ideal_share = mean(cut == "Ideal")),
+  my_sample2 |>
+    summarise(sample = "Sample 2",
+              mean_price = mean(price),
+              median_price = median(price),
+              ideal_share = mean(cut == "Ideal"))
+)
+
+sample_stats
+population
+```
+
+Population parameters:
+
+$$\mu_{price}=3932.80,\qquad \text{population median}=2401,
+\qquad p_{Ideal}=0.3995365.$$
+
+The two samples are:
+
+| Quantity     | Sample 1 | Sample 2 | Population |
+|--------------|---------:|---------:|-----------:|
+| Mean price   | 4,002.64 | 3,735.28 |   3,932.80 |
+| Median price |    2,514 |    2,225 |      2,401 |
+| Ideal share  | 0.385938 | 0.395313 |   0.399537 |
+
+Signed errors are:
+
+| Quantity     | Sample 1 error | Sample 2 error |
+|--------------|---------------:|---------------:|
+| Mean price   |         +69.84 |        -197.52 |
+| Median price |           +113 |           -176 |
+| Ideal share  |      -0.013599 |      -0.004224 |
+
+Therefore Sample 1 is closer for the **mean** and **median**, while Sample 2 is closer for the **Ideal share**.
+
+This is exactly what sampling variation should make possible. A sample is not a compressed copy of the population that is equally accurate for every feature. Different randomly selected observations affect different statistics in different ways. A sample may happen to contain a price mix that gives an accurate mean while slightly underrepresenting Ideal diamonds, while another sample does the reverse.
+
+Neither correctly generated sample is "wrong." A wrong sample would involve a design or processing error - for example, sampling from the wrong rows, accidentally sampling with replacement when that was not intended, or filtering before sampling without justification. A correct random sample can still differ from the population because random sampling variation is inherent in the procedure.
+
+## Solution C.2 - Sampling design
+
+### Proposal 1: open Telegram poll
+
+The main problem is **voluntary-response / self-selection bias**. Students decide for themselves whether to participate. A plausible upward bias would occur if students with unusually heavy workloads are more motivated to respond because the question feels especially relevant to them. Under that assumption, high-hour students enter the sample at a higher rate and the sample mean overstates the MA population mean.
+
+The direction is not automatic. If heavily loaded students are too busy to answer Telegram polls while students with lighter workloads answer more often, the bias could instead be downward.
+
+### Proposal 2: first 40 students at the building at 8:30 Monday
+
+This is a **convenience sample** with time-and-location selection. Suppose students arriving that early are more likely to have morning classes, live farther away, follow more structured schedules, or spend more time on campus and coursework. Under that assumption, the estimated mean could be biased upward.
+
+The sign could reverse if, for example, students who study many hours prefer working late and systematically avoid early arrival. What matters is the relationship between inclusion at 8:30 and the outcome being measured.
+
+### Proposal 3: e-mail everyone, 25% respond
+
+The issue is **nonresponse bias**. The sampling frame initially covers the whole MA population, but the realized sample contains only respondents. Suppose students with very heavy workloads are less likely to reply because they have little time. Then the observed mean would be biased downward.
+
+Again the direction depends on the response mechanism. If students under the greatest academic pressure are especially eager to report it, nonresponse could instead bias the mean upward.
+
+### Proposal 4: one compulsory first-year class
+
+The main problem is **undercoverage / coverage bias** if the target population is all MA students. Even a census of that class excludes second-year students and any other MA students outside the class. Suppose first-year students take more taught coursework and therefore spend more weekly hours on formal assignments than second-year students working more on theses. Under that assumption, the estimate is biased upward for the full MA population.
+
+If second-year thesis work is more time intensive than first-year coursework, the same coverage problem could lead to downward bias instead.
+
+### Better procedure
+
+Use the official MA student roster as the **sampling frame**. Assign each student an ID and use a random-number procedure to select, for example, 60 students without replacement. Send the same short survey to those selected students. Send one or two reminders only to selected nonrespondents. Keep the survey short and clearly state the reference week and what should count as coursework.
+
+This design requires roughly the same operational effort as manually approaching many students or sending a mass e-mail, but it improves the design in two ways. First, every student on the roster has a known chance of selection. Second, reminders target nonresponse rather than replacing nonrespondents with convenient students. If response rates differ visibly across year of study, the researcher should at minimum report those response patterns rather than silently assuming respondents and nonrespondents are identical.
