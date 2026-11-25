@@ -36,8 +36,8 @@ courses:
     where: {uk: "ОНЕУ, осінь 2026 · окрема категорія у Фінансовому клубі", en: "ONEU, autumn 2026 · a separate category in the Finance Club"}
     page: club/intro-economics.html
     summary:
-      uk: "Мікро- і макроекономіка: 11 лекцій, 5 Problem Sets, 5 групових кейсів, математичний буткемп і LaTeX-вихідники."
-      en: "Micro and macroeconomics: 11 lectures, 5 problem sets, 5 group cases, a maths bootcamp and LaTeX sources."
+      uk: "Мікро- і макроекономіка: 11 лекцій, 5 Problem Sets, 5 групових кейсів і математичний буткемп."
+      en: "Micro and macroeconomics: 11 lectures, 5 problem sets, 5 group cases and a maths bootcamp."
   - title: {uk: "Корпоративні фінанси та оцінка бізнесу: інтенсив", en: "Corporate Finance and Business Valuation: intensive"}
     where: {uk: "Фінансовий клуб ОНЕУ, березень–серпень 2026", en: "ONEU Finance Club, March–August 2026"}
     page: club/corporate-finance.html

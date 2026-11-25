@@ -192,13 +192,11 @@
     uk: |
       Курс мікро- і макроекономіки, який я викладаю в ОНЕУ: від поведінки споживача і фірми до ВВП, грошей, монетарної та
       фіскальної політики і відкритої економіки. Лекції 9–13 містять слайди «Кейс» із новинами осені 2026 р. Оцінювання
-      складається з п'яти Problem Sets і п'яти групових кейсів. Курс підтримує математичний буткемп.
-      Вихідні тексти всіх лекцій і завдань у LaTeX — наприкінці сторінки.
+      складається з п'яти Problem Sets і п'яти групових кейсів.
     en: |
       A micro- and macroeconomics course I teach at ONEU, from consumer and firm behaviour to GDP, money, monetary and
       fiscal policy and the open economy. Lectures 9–13 include “Case” slides built on autumn 2026 news. Assessment is
-      based on five problem sets and five group cases, supported by a maths bootcamp. Lectures and assignments are in
-      Ukrainian; the LaTeX sources are at the end of the page.
+      based on five problem sets and five group cases. Lectures and assignments are in Ukrainian.
   topics_title: {uk: "Лекції", en: "Lectures"}
   topics:
     - {n: 3, title: {uk: "Модель поведінки споживача", en: "Consumer behaviour"}, slides: club/intro-economics/lecture_03.pdf, practice: [{label: {uk: "Практикум", en: "Workshop"}, file: club/intro-economics/seminar_03.pdf}, {label: {uk: "Задачі з розв'язками", en: "Worked problems"}, file: club/intro-economics/week_03_sample_problems.pdf}]}
@@ -232,7 +230,6 @@
         - {title: {uk: "Система оцінювання", en: "Assessment"}, file: club/intro-economics/assessment.pdf}
         - {title: {uk: "Математичний буткемп", en: "Maths bootcamp"}, file: club/intro-economics/math_bootcamp.pdf}
         - {title: {uk: "R-скрипт: макродані України з API НБУ для кейсів", en: "R script: Ukrainian macro data from the NBU API for the cases"}, file: club/intro-economics/Ukraine_NBU_macro_pipeline_v2.R}
-        - {title: {uk: "Вихідні LaTeX-файли лекцій, завдань і кейсів", en: "LaTeX sources of lectures, assignments and cases"}, file: club/intro-economics/latex_sources.zip}
 
 - path: club/corporate-finance.html
   active: club.html
